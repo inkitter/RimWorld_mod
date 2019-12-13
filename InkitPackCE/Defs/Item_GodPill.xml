@@ -12,6 +12,7 @@
       <WorkToMake>300</WorkToMake>
       <MarketValue>1</MarketValue>
       <Mass>0.01</Mass>
+      <DeteriorationRate>0</DeteriorationRate>
     </statBases>
 
     <ingestible>
@@ -54,21 +55,18 @@
       <li Class="CompProperties_UseEffect">
         <compClass>CompUseEffect_FixWorstHealthCondition</compClass>
       </li>
-      
-      
     </comps>
 
     <recipeMaker>
 			<recipeUsers>
         <li>CraftingSpot</li>
         <li>DrugLab</li>
+        <li>ElectricStove</li>
+        <li>FueledStove</li>
       </recipeUsers>
       <workSpeedStat>DrugCookingSpeed</workSpeedStat>
       <workSkill>Cooking</workSkill>
     </recipeMaker>
-    <!-- <costList>
-      
-    </costList> -->
   </ThingDef>
 
   <HediffDef>
@@ -85,22 +83,23 @@
     <stages>
       <li>
         <hungerRateFactorOffset>-0.95</hungerRateFactorOffset>
-        <restFallFactor>0.3</restFallFactor>
+        <restFallFactor>0.8</restFallFactor>
+        <socialFightChanceFactor>-1</socialFightChanceFactor>
         <capMods>
           <li>
             <capacity>Consciousness</capacity>
-            <postFactor>1.2</postFactor>
+            <postFactor>1.3</postFactor>
             <offset>0.1</offset>
             <setMax>5</setMax>
           </li>
           <li>
             <capacity>Moving</capacity>
-            <postFactor>1.2</postFactor>
+            <postFactor>1.3</postFactor>
             <offset>0.15</offset>
           </li>
           <li>
             <capacity>Sight</capacity>
-            <postFactor>1.2</postFactor>
+            <postFactor>1.3</postFactor>
             <offset>0.3</offset>
           </li>
           <li>
@@ -110,48 +109,73 @@
           </li>
           <li>
             <capacity>BloodFiltration</capacity>
-            <postFactor>1.2</postFactor>
+            <postFactor>1.3</postFactor>
             <offset>0.4</offset>
           </li>
           <li>
             <capacity>BloodPumping</capacity>
-            <postFactor>1.2</postFactor>
+            <postFactor>1.3</postFactor>
             <offset>0.3</offset>
           </li>
             <li>
             <capacity>Metabolism</capacity>
-            <postFactor>1.2</postFactor>
+            <postFactor>1.3</postFactor>
             <offset>0.3</offset>
           </li>
           <li>
             <capacity>Breathing</capacity>
-            <postFactor>1.2</postFactor>
+            <postFactor>1.3</postFactor>
             <offset>0.3</offset>
           </li>
           <li>
             <capacity>Manipulation</capacity>
-            <postFactor>1.2</postFactor>
-            <offset>0.1</offset>
+            <postFactor>1.3</postFactor>
+            <offset>0.2</offset>
           </li>
         </capMods>
         <statOffsets>
-          <WorkSpeedGlobal>0.5</WorkSpeedGlobal>
-          <ArmorRating_Blunt>0.95</ArmorRating_Blunt>
-          <ArmorRating_Sharp>0.95</ArmorRating_Sharp>
-          <ArmorRating_Heat>0.95</ArmorRating_Heat>
-          <Flammability>-1</Flammability>
+          <PsychicSensitivity>-2</PsychicSensitivity>
+          <PainShockThreshold>2</PainShockThreshold>
+          <ToxicSensitivity>-2</ToxicSensitivity>
+          <MentalBreakThreshold>-2</MentalBreakThreshold>
+          <ComfyTemperatureMin>-100</ComfyTemperatureMin>
+          <ComfyTemperatureMax>100</ComfyTemperatureMax>
+          <SmokeSensitivity>-1</SmokeSensitivity>
+
+          <WorkSpeedGlobal>1</WorkSpeedGlobal>
+          <Flammability>-2</Flammability>
+          <ImmunityGainSpeed>10</ImmunityGainSpeed>
           <JoyGainFactor>100</JoyGainFactor>
-          <MentalBreakThreshold>-0.5</MentalBreakThreshold>
-          <RestRateMultiplier>1</RestRateMultiplier>
-          <MoveSpeed>15</MoveSpeed>
-          <PsychicSensitivity>-1</PsychicSensitivity>
-          <ToxicSensitivity>-1</ToxicSensitivity>
-          <ComfyTemperatureMin>-50</ComfyTemperatureMin>
-          <ComfyTemperatureMax>50</ComfyTemperatureMax>
+          <HungerRateMultiplier>-100</HungerRateMultiplier>
+
+          <MoveSpeed>100</MoveSpeed>
+          <AimingDelayFactor>-0.6</AimingDelayFactor>
+          <ShootingAccuracyPawn>3</ShootingAccuracyPawn>
+          <ArmorRating_Blunt>10</ArmorRating_Blunt>
+          <ArmorRating_Sharp>10</ArmorRating_Sharp>
+          <ArmorRating_Heat>10</ArmorRating_Heat>
+          <ArmorRating_Electric>10</ArmorRating_Electric>
+          <AverageSharpArmor>0.99</AverageSharpArmor>
+          <BodyPartSharpArmor>50</BodyPartSharpArmor>
+          <BodyPartBluntArmor>50</BodyPartBluntArmor>
+          <Suppressability>-1</Suppressability>
+
+          <MeleeDodgeChance>200</MeleeDodgeChance>
+          <MeleeParryChance>200</MeleeParryChance>
+          <MeleeHitChance>200</MeleeHitChance>
+          <MeleeCritChance>50</MeleeCritChance>
+          <UnarmedDamage>5</UnarmedDamage>
+          <MeleeArmorPenetration>200</MeleeArmorPenetration>
+
+          <CarryingCapacity>30</CarryingCapacity>
+          <CarryWeight>30</CarryWeight>
+          <CarryBulk>30</CarryBulk>
+          
         </statOffsets>
         <makeImmuneTo>
           <li>Malaria</li>
           <li>SleepingSickness</li>
+          <li>Flu</li>
           <li>Plague</li>
           <li>GutWorms</li>
           <li>MuscleParasites</li>
@@ -160,6 +184,18 @@
           <li>Animal_Plague</li>
           <li>ResurrectionSickness</li>
           <li>Alzheimers</li>
+          <li>BloodLoss</li>
+          <li>Anesthetic</li>
+          <li>CatatonicBreakdown</li>
+          <li>PsychicShock</li>
+          <li>HeartAttack</li>
+          <li>DrugOverdose</li>
+          <li>SleepingSickness</li>
+          <li>Asthma</li>
+          <li>HeartArteryBlockage</li>
+          <li>Carcinoma</li>
+          <li>MuscleSpasms</li>
+          <li>VenomBuildup</li>
         </makeImmuneTo>
       </li>
     </stages>
@@ -174,7 +210,7 @@
       <li>
         <label>high on GodsPill</label>
         <description>I'm Goddddd.</description>
-        <baseMoodEffect>70</baseMoodEffect>
+        <baseMoodEffect>75</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>
