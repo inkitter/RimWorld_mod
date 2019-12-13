@@ -12,17 +12,17 @@
           <WorkSpeedGlobal>1</WorkSpeedGlobal>
           <MentalBreakThreshold>-1</MentalBreakThreshold>
           <MoveSpeed>50</MoveSpeed>
-          <JoyGainFactor>1000</JoyGainFactor>
+          <JoyGainFactor>10</JoyGainFactor>
           <ToxicSensitivity>-1</ToxicSensitivity>
           <ComfyTemperatureMin>-200</ComfyTemperatureMin>
           <ComfyTemperatureMax>500</ComfyTemperatureMax>
           <CarryingCapacity>25</CarryingCapacity>
           <Flammability>-1</Flammability>
           <ImmunityGainSpeed>10</ImmunityGainSpeed>
-          <ArmorRating_Blunt>10000</ArmorRating_Blunt>
-          <ArmorRating_Sharp>10000</ArmorRating_Sharp>
-          <ArmorRating_Heat>10000</ArmorRating_Heat>
-          <AimingDelayFactor>-0.85</AimingDelayFactor>
+          <ArmorRating_Blunt>2</ArmorRating_Blunt>
+          <ArmorRating_Sharp>2</ArmorRating_Sharp>
+          <ArmorRating_Heat>2</ArmorRating_Heat>
+          <AimingDelayFactor>-0.55</AimingDelayFactor>
           <MeleeDodgeChance>100</MeleeDodgeChance>
           <MeleeHitChance>30</MeleeHitChance>
           <ShootingAccuracyPawn>3</ShootingAccuracyPawn>
@@ -30,6 +30,15 @@
           <RestRateMultiplier>0.3</RestRateMultiplier>
           <MedicalTendQuality>20</MedicalTendQuality>
           <MedicalOperationSpeed>0.2</MedicalOperationSpeed>
+          <AverageSharpArmor>5</AverageSharpArmor>
+          <Suppressability>-1</Suppressability>
+          <MeleeParryChance>100</MeleeParryChance>
+          <BodyPartSharpArmor>5</BodyPartSharpArmor>
+          <BodyPartBluntArmor>5</BodyPartBluntArmor>
+          <SmokeSensitivity>-1</SmokeSensitivity>
+          <CarryWeight>20</CarryWeight>
+          <CarryBulk>20</CarryBulk>
+          <ArmorRating_Electric>2</ArmorRating_Electric>
         </statOffsets>
         <skillGains>
 					<li><key>Medicine</key><value>10</value></li>
