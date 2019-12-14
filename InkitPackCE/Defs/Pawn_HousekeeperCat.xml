@@ -118,10 +118,14 @@
 			<ComfyTemperatureMax>70</ComfyTemperatureMax>
 			<MarketValue>1000</MarketValue>
 			<MeatAmount>50</MeatAmount>
+			<ArmorRating_Sharp>10</ArmorRating_Sharp>
+			<ArmorRating_Blunt>10</ArmorRating_Blunt>
+			<ArmorRating_Heat>10</ArmorRating_Heat>
+			<ArmorRating_Electric>10</ArmorRating_Electric>
 		</statBases>
 		<tools>
 			<li>
-				<label>left claw</label>
+				<label>左爪</label>
 				<capacities>
 					<li>Scratch</li>
 				</capacities>
@@ -138,7 +142,7 @@
 				</surpriseAttack>
 			</li>
 			<li>
-				<label>right claw</label>
+				<label>右爪</label>
 				<capacities>
 					<li>Scratch</li>
 				</capacities>
@@ -155,7 +159,7 @@
 				</surpriseAttack>
 			</li>
 			<li>
-				<label>teeth</label>
+				<label>牙齿</label>
 				<capacities>
 					<li>Bite</li>
 				</capacities>
@@ -172,7 +176,7 @@
 				</surpriseAttack>
 			</li>
 			<li>
-				<label>head</label>
+				<label>头</label>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
@@ -186,8 +190,8 @@
 		<comps>
 			<li Class="CompProperties_Shearable">
 				<woolDef>Wool_HKCat</woolDef>
-				<shearIntervalDays>10</shearIntervalDays>
-				<woolAmount>500</woolAmount>
+				<shearIntervalDays>5</shearIntervalDays>
+				<woolAmount>1000</woolAmount>
 			</li>
 		</comps>
 		<race>
@@ -271,7 +275,7 @@
 	<ThingDef ParentName="LeatherBase">
 		<defName>Leather_HKCat</defName>
 		<label>助手猫皮</label>
-		<description>Tanned housekeeper cat pelt offers exceptional insulation.</description>
+		<description>助手猫身上的皮</description>
 		<graphicData>
 			<color>(100, 100, 100)</color>
 			<colorTwo>(100, 100, 100)</colorTwo>
@@ -292,7 +296,7 @@
 	<ThingDef ParentName="WoolBase">
 		<defName>Wool_HKCat</defName>
 		<label>助手猫毛</label>
-		<description>Wool from housekeeper cat offers exceptional insulation.</description>
+		<description>助手猫掉落的毛。</description>
 		<graphicData>
 			<color>(1,1,1)</color>
 		</graphicData>
@@ -337,26 +341,4 @@
 			</statOffsets>
 		</stuffProps>
 	</ThingDef>
-
-	<TerrainDef ParentName="FloorBase">
-		<defName>Tile_HKCat</defName>
-		<label>超合金地板</label>
-		<renderPrecedence>241</renderPrecedence>
-		<pathCost>-1</pathCost>
-		<fertility>5</fertility>
-		<description>For a futuristic but royal look, HousekeeperCat wool tiles fit perfectly into luxurious rooms. They get a bonus to cleanliness.</description>
-		<texturePath>Terrain/Surfaces/GenericFloorTile</texturePath>
-		<color>(0.45, 0.45, 0.45)</color>
-		<statBases>
-			<Beauty>5</Beauty>
-			<WorkToBuild>800</WorkToBuild>
-			<Cleanliness>0.8</Cleanliness>
-		</statBases>
-		<costList>
-			<Wool_HKCat>2</Wool_HKCat>
-		</costList>
-		<constructEffect>ConstructMetal</constructEffect>
-		<designationHotKey>Misc2</designationHotKey>
-		<constructionSkillPrerequisite>1</constructionSkillPrerequisite>
-	</TerrainDef>
 </Defs>

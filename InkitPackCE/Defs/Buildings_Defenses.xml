@@ -20,7 +20,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>BarbedWire</defName>
-    <label>barbed wire</label>
+    <label>铁丝网</label>
     <thingClass>Building</thingClass>
     <category>Building</category>
     <graphicData>
@@ -70,7 +70,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>Embrasure</defName>
-    <label>embrasure</label>
+    <label>射击墙</label>
     <thingClass>Building</thingClass>
     <category>Building</category>
     <description>A wall with a firing port to allow shooting from relative safety.</description>
@@ -104,14 +104,14 @@
     <altitudeLayer>Building</altitudeLayer>
     <passability>Impassable</passability>
     <castEdgeShadows>true</castEdgeShadows>
-    <fillPercent>0.85</fillPercent>
+    <fillPercent>0.7</fillPercent>
     <coversFloor>true</coversFloor>
     <placingDraggableDimensions>1</placingDraggableDimensions>
     <tickerType>Never</tickerType>
     <rotatable>false</rotatable>
     <selectable>true</selectable>
     <neverMultiSelect>true</neverMultiSelect>
-    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <holdsRoof>true</holdsRoof>
     <designationCategory>Structure</designationCategory>
     <staticSunShadowHeight>1</staticSunShadowHeight>
@@ -189,7 +189,7 @@
       <WorkToBuild>135</WorkToBuild>
       <Flammability>0</Flammability>
     </statBases>
-    <costStuffCount>5</costStuffCount>
+    <costStuffCount>1</costStuffCount>
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
     <altitudeLayer>Building</altitudeLayer>
     <passability>Impassable</passability>
@@ -202,7 +202,7 @@
     <rotatable>false</rotatable>
     <selectable>true</selectable>
     <neverMultiSelect>true</neverMultiSelect>
-    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <holdsRoof>true</holdsRoof>
     <designationCategory>Structure</designationCategory>
     <staticSunShadowHeight>1.0</staticSunShadowHeight>

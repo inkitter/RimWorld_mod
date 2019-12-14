@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<TerrainDef ParentName="FloorBase">
+		<defName>Tile_HKCat</defName>
+		<label>超合金地板</label>
+		<renderPrecedence>241</renderPrecedence>
+		<pathCost>-1</pathCost>
+		<fertility>5</fertility>
+		<description>助手猫毛提取出非牛顿性液体，再经压缩制成的地板。</description>
+		<texturePath>Terrain/Surfaces/GenericFloorTile</texturePath>
+		<color>(0.45, 0.45, 0.45)</color>
+		<statBases>
+			<Beauty>7</Beauty>
+			<WorkToBuild>400</WorkToBuild>
+			<Cleanliness>0.8</Cleanliness>
+		</statBases>
+		<costList>
+			<Wool_HKCat>1</Wool_HKCat>
+		</costList>
+		<constructEffect>ConstructMetal</constructEffect>
+		<designationHotKey>Misc2</designationHotKey>
+		<constructionSkillPrerequisite>1</constructionSkillPrerequisite>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+	</TerrainDef>
+</Defs>

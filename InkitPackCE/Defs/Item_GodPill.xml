@@ -46,11 +46,11 @@
       <li Class="CompProperties_Targetable">
         <compClass>CompTargetable_SingleCorpse</compClass>
       </li>
+      <!-- <li Class="CompProperties_Targetable">
+        <compClass>CompTargetable_SinglePawn</compClass>
+      </li> -->
       <li>
         <compClass>CompTargetEffect_Resurrect</compClass>
-      </li>
-      <li Class="CompProperties_Targetable">
-        <compClass>CompTargetable_SinglePawn</compClass>
       </li>
       <li Class="CompProperties_UseEffect">
         <compClass>CompUseEffect_FixWorstHealthCondition</compClass>
@@ -83,7 +83,7 @@
     <stages>
       <li>
         <hungerRateFactorOffset>-0.95</hungerRateFactorOffset>
-        <restFallFactor>0.8</restFallFactor>
+        <restFallFactor>0.2</restFallFactor>
         <socialFightChanceFactor>-1</socialFightChanceFactor>
         <capMods>
           <li>
@@ -158,7 +158,7 @@
           <AverageSharpArmor>0.99</AverageSharpArmor>
           <BodyPartSharpArmor>50</BodyPartSharpArmor>
           <BodyPartBluntArmor>50</BodyPartBluntArmor>
-          <Suppressability>-1</Suppressability>
+          <Suppressability>-2</Suppressability>
 
           <MeleeDodgeChance>200</MeleeDodgeChance>
           <MeleeParryChance>200</MeleeParryChance>

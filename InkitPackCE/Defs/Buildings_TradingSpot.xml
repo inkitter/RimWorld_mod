@@ -2,7 +2,7 @@
 <Defs>
 	<ThingDef ParentName="BuildingBase">
 		<defName>TradingSpot</defName>
-		<label>TradingSpot</label>
+		<label>trading spot</label>
 		<thingClass>TradingSpot.TradingSpot</thingClass>
 		<description>Designates a spot where traders will stop when visiting your colony.</description>
 		<graphicData>

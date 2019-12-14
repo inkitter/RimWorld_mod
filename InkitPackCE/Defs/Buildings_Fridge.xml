@@ -17,38 +17,38 @@
 			<li>BuildingsFurniture</li>
 		</thingCategories>
 		<building>
-			<preventDeteriorationInside>true</preventDeteriorationInside>
-			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
-			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
-			<fixedStorageSettings>
-				<filter>
-					<categories>
-						<li>AnimalProductRaw</li>
-						<li>Corpses</li>
-						<li>Drugs</li>
-						<li>EggsFertilized</li>
-						<li>EggsUnfertilized</li>
-						<li>Foods</li>
-						<li>Medicine</li>
-						<li>PlantMatter</li>
-						<li>PlantFoodRaw</li>
-					</categories>
-					<specialFiltersToDisallow>
-						<li>AllowRotten</li>
-					</specialFiltersToDisallow>
-				</filter>
-			</fixedStorageSettings>
-			<defaultStorageSettings>
-				<priority>Important</priority>
-				<filter>
-					<categories>
-						<li>FoodMeals</li>
-					</categories>
-					<disallowedThingDefs>
-						<li>MealSurvivalPack</li>
-					</disallowedThingDefs>
-				</filter>
-			</defaultStorageSettings>
+		<preventDeteriorationInside>true</preventDeteriorationInside>
+		<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+		<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+		<fixedStorageSettings>
+			<filter>
+				<categories>
+					<li>AnimalProductRaw</li>
+					<li>Corpses</li>
+					<li>Drugs</li>
+					<li>EggsFertilized</li>
+					<li>EggsUnfertilized</li>
+					<li>Foods</li>
+					<li>Medicine</li>
+					<li>PlantMatter</li>
+					<li>PlantFoodRaw</li>
+				</categories>
+				<specialFiltersToDisallow>
+					<li>AllowRotten</li>
+				</specialFiltersToDisallow>
+			</filter>
+		</fixedStorageSettings>
+		<defaultStorageSettings>
+			<priority>Important</priority>
+			<filter>
+				<categories>
+					<li>FoodMeals</li>
+				</categories>
+				<disallowedThingDefs>
+					<li>MealSurvivalPack</li>
+				</disallowedThingDefs>
+			</filter>
+		</defaultStorageSettings>
 		</building>
 	</ThingDef>
 

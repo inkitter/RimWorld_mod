@@ -2,10 +2,10 @@
 <Defs>
 
   <ThingDef Abstract="True" Name="TWBSunLightBase" ParentName="BuildingBase">
-	<thingClass>Building</thingClass>
+    <thingClass>Building</thingClass>
     <altitudeLayer>Blueprint</altitudeLayer>
     <passability>Standable</passability>
-	<statBases>
+    <statBases>
       <MaxHitPoints>10</MaxHitPoints>
       <WorkToBuild>100</WorkToBuild>
       <Flammability>1.0</Flammability>
@@ -20,21 +20,20 @@
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>100</basePowerConsumption>
       </li>
-      <li Class="CompProperties_Flickable" />
     </comps>
     <building>
       <isEdifice>false</isEdifice>
     </building>
     <designationCategory>Furniture</designationCategory>
-    <rotatable>true</rotatable>
-	<selectable>true</selectable>
-	<destroyable>true</destroyable>
-	<clearBuildingArea>false</clearBuildingArea>
-	<researchPrerequisites><li>Electricity</li></researchPrerequisites>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <destroyable>false</destroyable>
+    <clearBuildingArea>false</clearBuildingArea>
+    <researchPrerequisites><li>Electricity</li></researchPrerequisites>
   </ThingDef>
   
   <ThingDef Name="TWBSunLight" ParentName="TWBSunLightBase">
-	<defName>TWBSunLight</defName>
+	  <defName>TWBSunLight</defName>
     <label>Sun Light</label>
     <graphicData>
       <texPath>Things/Building/TWBSunLight</texPath>
@@ -45,7 +44,7 @@
     <description>A bright sun lamp designed to be mounted on a wall. Perfect for indoor growing year-round.</description>
     <comps>
       <li Class="CompProperties_Glower">
-	<overlightRadius>20</overlightRadius>
+	      <overlightRadius>20</overlightRadius>
         <glowRadius>20</glowRadius>
         <glowColor>(217,217,208,0)</glowColor>
       </li>

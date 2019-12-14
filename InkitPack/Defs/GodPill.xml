@@ -42,14 +42,14 @@
         <useLabel>Use resurrector mech serum</useLabel>
         <useDuration>0</useDuration>
       </li>
-      <li Class="CompProperties_Targetable">
+      <!-- <li Class="CompProperties_Targetable">
         <compClass>CompTargetable_SingleCorpse</compClass>
+      </li> -->
+      <li Class="CompProperties_Targetable">
+        <compClass>CompTargetable_SinglePawn</compClass>
       </li>
       <li>
         <compClass>CompTargetEffect_Resurrect</compClass>
-      </li>
-      <li Class="CompProperties_Targetable">
-        <compClass>CompTargetable_SinglePawn</compClass>
       </li>
       <li Class="CompProperties_UseEffect">
         <compClass>CompUseEffect_FixWorstHealthCondition</compClass>
