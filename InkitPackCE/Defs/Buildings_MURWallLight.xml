@@ -6,8 +6,8 @@
       <li>BuildingsFurniture</li>
     </thingCategories>
     <minifiedDef>MinifiedThing</minifiedDef>
-      <altitudeLayer>Blueprint</altitudeLayer>
-      <passability>Standable</passability>
+    <altitudeLayer>Blueprint</altitudeLayer>
+    <passability>Standable</passability>
     <statBases>
       <MaxHitPoints>10</MaxHitPoints>
       <WorkToBuild>100</WorkToBuild>
@@ -28,9 +28,10 @@
     <building>
       <isEdifice>false</isEdifice>
     </building>
-    <rotatable>false</rotatable>
+    <rotatable>true</rotatable>
     <selectable>true</selectable>
-    <destroyable>false</destroyable>
+    <destroyable>true</destroyable>
+    <useHitPoints>false</useHitPoints>
     <tradeability>None</tradeability>
     <clearBuildingArea>false</clearBuildingArea>
   </ThingDef>
@@ -144,7 +145,7 @@
     </building>
     <tickerType>Never</tickerType>
     <designationCategory>Furniture</designationCategory>
-    <rotatable>false</rotatable>
+    <rotatable>true</rotatable>
     <selectable>true</selectable>
     <destroyable>false</destroyable>
     <useHitPoints>false</useHitPoints>

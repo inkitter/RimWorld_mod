@@ -7,7 +7,7 @@
       <texPath>Things/Item/Drug/Luciferium</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
-    <rotatable>false</rotatable>
+    <useHitPoints>false</useHitPoints>
     <statBases>
       <WorkToMake>300</WorkToMake>
       <MarketValue>1</MarketValue>
@@ -146,18 +146,18 @@
           <Flammability>-2</Flammability>
           <ImmunityGainSpeed>10</ImmunityGainSpeed>
           <JoyGainFactor>100</JoyGainFactor>
-          <HungerRateMultiplier>-100</HungerRateMultiplier>
+          <HungerRateMultiplier>-0.95</HungerRateMultiplier>
 
           <MoveSpeed>100</MoveSpeed>
           <AimingDelayFactor>-0.6</AimingDelayFactor>
           <ShootingAccuracyPawn>3</ShootingAccuracyPawn>
-          <ArmorRating_Blunt>10</ArmorRating_Blunt>
-          <ArmorRating_Sharp>10</ArmorRating_Sharp>
-          <ArmorRating_Heat>10</ArmorRating_Heat>
-          <ArmorRating_Electric>10</ArmorRating_Electric>
-          <AverageSharpArmor>0.99</AverageSharpArmor>
-          <BodyPartSharpArmor>50</BodyPartSharpArmor>
-          <BodyPartBluntArmor>50</BodyPartBluntArmor>
+          <ArmorRating_Blunt>100</ArmorRating_Blunt>
+          <ArmorRating_Sharp>100</ArmorRating_Sharp>
+          <ArmorRating_Heat>100</ArmorRating_Heat>
+          <ArmorRating_Electric>100</ArmorRating_Electric>
+          <AverageSharpArmor>1</AverageSharpArmor>
+          <BodyPartSharpArmor>100</BodyPartSharpArmor>
+          <BodyPartBluntArmor>100</BodyPartBluntArmor>
           <Suppressability>-2</Suppressability>
 
           <MeleeDodgeChance>200</MeleeDodgeChance>

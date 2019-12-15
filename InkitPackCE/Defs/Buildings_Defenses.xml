@@ -1,23 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef Name="BuildingBase" Abstract="True">
-    <category>Building</category>
-    <thingClass>Building</thingClass>
-    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
-    <selectable>true</selectable>
-    <drawerType>MapMeshAndRealTime</drawerType>
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-    <repairEffect>Repair</repairEffect>
-    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
-    <filthLeaving>Filth_RubbleBuilding</filthLeaving>
-    <statBases>
-      <SellPriceFactor>0.70</SellPriceFactor>
-    </statBases>
-  </ThingDef>
-
-  <!--========================= Barbed Wire =============================-->
-
   <ThingDef ParentName="BuildingBase">
     <defName>BarbedWire</defName>
     <label>铁丝网</label>
@@ -37,6 +20,7 @@
     <passability>PassThroughOnly</passability>
     <castEdgeShadows>true</castEdgeShadows>
     <fillPercent>0.0</fillPercent>
+    <useHitPoints>false</useHitPoints>
     <statBases>
       <MaxHitPoints>1000</MaxHitPoints>
       <Beauty>-30</Beauty>
@@ -103,6 +87,7 @@
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
     <altitudeLayer>Building</altitudeLayer>
     <passability>Impassable</passability>
+    <useHitPoints>false</useHitPoints>
     <castEdgeShadows>true</castEdgeShadows>
     <fillPercent>0.7</fillPercent>
     <coversFloor>true</coversFloor>

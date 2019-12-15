@@ -8,7 +8,7 @@
     <statBases>
       <MaxHitPoints>10</MaxHitPoints>
       <WorkToBuild>100</WorkToBuild>
-      <Flammability>1.0</Flammability>
+      <Flammability>0</Flammability>
     </statBases>
     <size>(1,1)</size>
     <costList>
@@ -25,9 +25,10 @@
       <isEdifice>false</isEdifice>
     </building>
     <designationCategory>Furniture</designationCategory>
-    <rotatable>false</rotatable>
+    <rotatable>true</rotatable>
     <selectable>true</selectable>
-    <destroyable>false</destroyable>
+    <destroyable>true</destroyable>
+    <useHitPoints>false</useHitPoints>
     <clearBuildingArea>false</clearBuildingArea>
     <researchPrerequisites><li>Electricity</li></researchPrerequisites>
   </ThingDef>

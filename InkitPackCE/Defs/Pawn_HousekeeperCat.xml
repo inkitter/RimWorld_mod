@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+
+	<StuffCategoryDef>
+		<defName>HCat_stuff</defName>
+		<label>超合金</label>
+	</StuffCategoryDef>  
+
 	<LifeStageDef>
 		<defName>HousekeeperCatAdult</defName>
 		<label>adult</label>
@@ -300,15 +306,14 @@
 		<graphicData>
 			<color>(1,1,1)</color>
 		</graphicData>
+		<useHitPoints>false</useHitPoints>
 		<statBases>
-			<MarketValue>0.5</MarketValue>
+			<MarketValue>3</MarketValue>
 			<DeteriorationRate>0</DeteriorationRate>
 			<StuffPower_Armor_Sharp>10</StuffPower_Armor_Sharp>
 			<StuffPower_Armor_Blunt>10</StuffPower_Armor_Blunt>
 			<StuffPower_Armor_Heat>10</StuffPower_Armor_Heat>
 			<StuffPower_Armor_Electric>10</StuffPower_Armor_Electric>
-			<StuffPower_Insulation_Cold>100</StuffPower_Insulation_Cold>
-			<StuffPower_Insulation_Heat>100</StuffPower_Insulation_Heat>
 			<SharpDamageMultiplier>1.5</SharpDamageMultiplier>
       		<BluntDamageMultiplier>2.0</BluntDamageMultiplier>
 		</statBases>
@@ -323,6 +328,7 @@
 				<li>Woody</li>
 				<li>Leathery</li>
 				<li>Stony</li>
+				<li>HCat_stuff</li>
 			</categories>
 			<commonality>0</commonality>
 			<color>(1,1,1)</color>
@@ -337,7 +343,7 @@
 			<smeltable>true</smeltable>
 			<statOffsets>
 				<Beauty>7</Beauty>
-				<Comfort>0.3</Comfort>
+				<Comfort>0.4</Comfort>
 			</statOffsets>
 		</stuffProps>
 	</ThingDef>

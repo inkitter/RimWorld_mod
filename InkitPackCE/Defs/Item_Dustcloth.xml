@@ -1,16 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <ThingDef Name="ApparelMakeableBaseGod" ParentName="ApparelMakeableBase" Abstract="True">
-    <costList>
-			<Wool_HKCat>1</Wool_HKCat>
-		</costList>
+    <costStuffCount>1</costStuffCount>
+    <stuffCategories>
+      <li>HCat_stuff</li>
+    </stuffCategories>
     <generateCommonality>0</generateCommonality>
     <tradeability>Sellable</tradeability>
     <thingCategories>
       <li>Apparel</li>
     </thingCategories>
     <statBases>
-      <MarketValue>300</MarketValue>
+      <MarketValue>500</MarketValue>
       <Flammability>0</Flammability>
 			<MaxHitPoints>1000</MaxHitPoints>
 			<WorkToMake>15000</WorkToMake>
@@ -21,15 +22,16 @@
       <ArmorRating_Blunt>10</ArmorRating_Blunt>
       <ArmorRating_Heat>10</ArmorRating_Heat>
       <ArmorRating_Electric>10</ArmorRating_Electric>
-      <StuffEffectMultiplierArmor>5</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierArmor>10</StuffEffectMultiplierArmor>
       <!-- <EnergyShieldEnergyMax>10</EnergyShieldEnergyMax>
       <EnergyShieldRechargeRate>0.5</EnergyShieldRechargeRate> -->
       <EquipDelay>1</EquipDelay>
     </statBases>
+    <useHitPoints>false</useHitPoints>
     <equippedStatOffsets>
-			<SocialImpact>0.07</SocialImpact>
-      <CarryBulk>7</CarryBulk>
-      <ReloadSpeed>0.07</ReloadSpeed>
+			<SocialImpact>0.2</SocialImpact>
+      <CarryBulk>25</CarryBulk>
+      <ReloadSpeed>0.2</ReloadSpeed>
 		</equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
@@ -57,6 +59,28 @@
 	</ThingDef>
 
   <ThingDef ParentName="ApparelMakeableBaseGod">
+    <defName>Apparel_GodDuster</defName>
+    <description>助手猫毛制成的防尘大衣.</description>
+    <label>流体合金大衣</label>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Duster/Duster</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.05</drawSize>
+    </graphicData>
+    <apparel>
+      <layers>
+        <li>Overhead</li>
+        <li>Shell</li>
+        <li>Middle</li>
+        <li>OnSkin</li>
+        <li>Belt</li>
+        <li>Backpack</li>
+      </layers>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Duster/Duster</wornGraphicPath>
+    </apparel>
+  </ThingDef>
+
+  <!-- <ThingDef ParentName="ApparelMakeableBaseGod">
     <defName>Apparel_GodBelt</defName>
     <label>God 腰带</label>
     <description>A simple set of belt.</description>
@@ -69,11 +93,7 @@
         <li>Belt</li>
       </layers>
     </apparel>
-    <!-- <costStuffCount>10</costStuffCount>
-    <stuffCategories>
-      <li>Fabric</li>
-      <li>Leathery</li>
-    </stuffCategories> -->
+    
   </ThingDef>
 
   <ThingDef ParentName="ApparelMakeableBaseGod">
@@ -90,25 +110,7 @@
       </layers>
       <wornGraphicPath>Things/Apparel/TribalPack/Tribalpack</wornGraphicPath>
     </apparel>
-  </ThingDef>
+  </ThingDef> -->
 
-  <ThingDef ParentName="ApparelMakeableBaseGod">
-    <defName>Apparel_GodDuster</defName>
-    <description>助手猫毛制成的防尘大衣.</description>
-    <label>God 防尘大衣</label>
-    <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/Duster/Duster</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>1.05</drawSize>
-    </graphicData>
-    <apparel>
-      <layers>
-        <li>Overhead</li>
-        <li>Shell</li>
-        <li>Middle</li>
-        <li>OnSkin</li>
-      </layers>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Duster/Duster</wornGraphicPath>
-    </apparel>
-  </ThingDef>
+  
 </Defs>

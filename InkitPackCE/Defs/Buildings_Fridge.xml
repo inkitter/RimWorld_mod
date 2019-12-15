@@ -3,6 +3,8 @@
 	<ThingDef Name="FridgeBase" Abstract="True">
 		<designationCategory>Furniture</designationCategory>
 		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingClass>RimFridge.Building_Refrigerator</thingClass>
+		<altitudeLayer>Building</altitudeLayer>	
 		<tradeTags>
 			<li>Furniture</li>
 		</tradeTags>
@@ -13,77 +15,94 @@
 		<repairEffect>Repair</repairEffect>
 		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
 		<filthLeaving>Filth_RubbleBuilding</filthLeaving>
+		
 		<thingCategories>
 			<li>BuildingsFurniture</li>
 		</thingCategories>
-		<building>
-		<preventDeteriorationInside>true</preventDeteriorationInside>
-		<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
-		<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
-		<fixedStorageSettings>
-			<filter>
-				<categories>
-					<li>AnimalProductRaw</li>
-					<li>Corpses</li>
-					<li>Drugs</li>
-					<li>EggsFertilized</li>
-					<li>EggsUnfertilized</li>
-					<li>Foods</li>
-					<li>Medicine</li>
-					<li>PlantMatter</li>
-					<li>PlantFoodRaw</li>
-				</categories>
-				<specialFiltersToDisallow>
-					<li>AllowRotten</li>
-				</specialFiltersToDisallow>
-			</filter>
-		</fixedStorageSettings>
-		<defaultStorageSettings>
-			<priority>Important</priority>
-			<filter>
-				<categories>
-					<li>FoodMeals</li>
-				</categories>
-				<disallowedThingDefs>
-					<li>MealSurvivalPack</li>
-				</disallowedThingDefs>
-			</filter>
-		</defaultStorageSettings>
-		</building>
-	</ThingDef>
 
-	<ThingDef ParentName="FridgeBase">
-		<defName>RimFridge_Refrigerator</defName>
-		<label>冰箱</label>
-		<thingClass>RimFridge.Building_Refrigerator</thingClass>
-		<graphicData>
-			<texPath>Building/Temperature/Fridge/DualFridge</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(4,3)</drawSize>
-		</graphicData>
-		<altitudeLayer>Building</altitudeLayer>
-		<passability>PassThroughOnly</passability>
-		<fillPercent>0.4</fillPercent>
-		<castEdgeShadows>true</castEdgeShadows>
-		<costList>
-			<Steel>40</Steel>
-		</costList>
 		<statBases>
 			<Mass>30</Mass>
 			<MaxHitPoints>1000</MaxHitPoints>
 			<WorkToBuild>1050</WorkToBuild>
 			<Flammability>0</Flammability>
 		</statBases>
-		<size>(2,1)</size>
+		<destroyable>true</destroyable>
+		<useHitPoints>false</useHitPoints>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.4</fillPercent>
+		
+		<castEdgeShadows>true</castEdgeShadows>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
-				<basePowerConsumption>90</basePowerConsumption>
+				<basePowerConsumption>75</basePowerConsumption>
 			</li>
 			<li Class="CompProperties_Glower">
-				<glowRadius>2.5</glowRadius>
+				<glowRadius>4</glowRadius>
 				<glowColor>(89,188,255,0)</glowColor>
 			</li>
+		</comps>
+		<inspectorTabs>
+			<li>ITab_Storage</li>
+		</inspectorTabs>
+		<staticSunShadowHeight>0.5</staticSunShadowHeight>
+		<surfaceType>Item</surfaceType>
+		<description>Rottable things stored in this will not spoil</description>
+		<tickerType>Rare</tickerType>
+		<pathCost>30</pathCost>
+		<placeWorkers>
+			<li>PlaceWorker_Heater</li>
+		</placeWorkers>
+
+		<building>
+			<preventDeteriorationInside>true</preventDeteriorationInside>
+			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+			<fixedStorageSettings>
+				<filter>
+					<categories>
+						<li>AnimalProductRaw</li>
+						<li>Corpses</li>
+						<li>Drugs</li>
+						<li>EggsFertilized</li>
+						<li>EggsUnfertilized</li>
+						<li>Foods</li>
+						<li>Medicine</li>
+						<li>PlantMatter</li>
+						<li>PlantFoodRaw</li>
+					</categories>
+					<specialFiltersToDisallow>
+						<li>AllowRotten</li>
+					</specialFiltersToDisallow>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>FoodMeals</li>
+					</categories>
+					<disallowedThingDefs>
+						<li>MealSurvivalPack</li>
+					</disallowedThingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="FridgeBase">
+		<defName>RimFridge_Refrigerator</defName>
+		<label>冰箱</label>	
+		<graphicData>
+			<texPath>Building/Temperature/Fridge/DualFridge</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,3)</drawSize>
+		</graphicData>
+		<costList>
+			<Steel>40</Steel>
+		</costList>
+		<size>(2,1)</size>
+		<comps>
 			<li Class="RimFridge.CompProperties_SecondLayer">
 				<graphicData>
 					<texPath>Building/Temperature/Fridge/DualFridgeLid</texPath>
@@ -93,54 +112,23 @@
 				</graphicData>
 				<altitudeLayer>MoteOverhead</altitudeLayer>
 			</li>
-		</comps>	
-		<inspectorTabs>
-			<li>ITab_Storage</li>
-		</inspectorTabs>
-		<designationHotKey>Misc12</designationHotKey>
-		<staticSunShadowHeight>0.5</staticSunShadowHeight>
-		<surfaceType>Item</surfaceType>
-		<description>Rottable things stored in this will not spoil</description>
-		<tickerType>Rare</tickerType>
+		</comps>
 		<designationCategory>Temperature</designationCategory>
-		<pathCost>30</pathCost>
-		<placeWorkers>
-			<li>PlaceWorker_Heater</li>
-		</placeWorkers>
 	</ThingDef>
 
 	<ThingDef ParentName="FridgeBase">
 		<defName>RimFridge_SingleRefrigerator</defName>
 		<label>小冰箱</label>
-		<thingClass>RimFridge.Building_Refrigerator</thingClass>
 		<graphicData>
 			<texPath>Building/Temperature/Fridge/SingleFridge</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3, 3)</drawSize>
 		</graphicData>
-		<altitudeLayer>Building</altitudeLayer>
-		<passability>PassThroughOnly</passability>
-		<fillPercent>0.4</fillPercent>
-		<castEdgeShadows>true</castEdgeShadows>
 		<costList>
 			<Steel>20</Steel>
 		</costList>
-		<statBases>
-			<Mass>15</Mass>
-			<MaxHitPoints>1000</MaxHitPoints>
-			<WorkToBuild>1050</WorkToBuild>
-			<Flammability>0</Flammability>
-		</statBases>
 		<size>(1,1)</size>
 		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
-				<basePowerConsumption>50</basePowerConsumption>
-			</li>
-			<li Class="CompProperties_Glower">
-				<glowRadius>2</glowRadius>
-				<glowColor>(89,188,255,0)</glowColor>
-			</li>
 			<li Class="RimFridge.CompProperties_SecondLayer">
 				<graphicData>
 					<texPath>Building/Temperature/Fridge/SingleFridgeLid</texPath>
@@ -150,58 +138,24 @@
 				</graphicData>
 				<altitudeLayer>MoteOverhead</altitudeLayer>
 			</li>
-		</comps>	
-		<inspectorTabs>
-			<li>ITab_Storage</li>
-		</inspectorTabs>
-		<designationHotKey>Misc12</designationHotKey>
-		<staticSunShadowHeight>0.5</staticSunShadowHeight>
-		<surfaceType>Item</surfaceType>
-		<description>Rottable things stored in this will not spoil</description>
-		<tickerType>Rare</tickerType>
+		</comps>
 		<designationCategory>Temperature</designationCategory>
-		<pathCost>30</pathCost>
-		<placeWorkers>
-			<li>PlaceWorker_Heater</li>
-		</placeWorkers>
 	</ThingDef>
 
 
 	<ThingDef ParentName="FridgeBase">
 		<defName>RimFridge_QuadRefrigerator</defName>
 		<label>大冰箱</label>
-		<thingClass>RimFridge.Building_Refrigerator</thingClass>
 		<graphicData>
 			<texPath>Building/Temperature/Fridge/QuadFridge</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4, 4)</drawSize>
 		</graphicData>
-		<altitudeLayer>Building</altitudeLayer>
-		<passability>PassThroughOnly</passability>
-		<fillPercent>0.4</fillPercent>
-		<castEdgeShadows>true</castEdgeShadows>
 		<costList>
 			<Steel>60</Steel>
 		</costList>
-		<statBases>
-			<Mass>70</Mass>
-			<MaxHitPoints>100</MaxHitPoints>
-			<WorkToBuild>1800</WorkToBuild>
-			<Flammability>0</Flammability>
-		</statBases>
 		<size>(2,2)</size>
-		<researchPrerequisites>
-			<li>AirConditioning</li>
-		</researchPrerequisites>
 		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
-				<basePowerConsumption>160</basePowerConsumption>
-			</li>
-			<li Class="CompProperties_Glower">
-				<glowRadius>2</glowRadius>
-				<glowColor>(89,188,255,0)</glowColor>
-			</li>
 			<li Class="RimFridge.CompProperties_SecondLayer">
 				<graphicData>
 					<texPath>Building/Temperature/Fridge/QuadFridgeLid</texPath>
@@ -211,23 +165,9 @@
 				</graphicData>
 				<altitudeLayer>MoteOverhead</altitudeLayer>
 			</li>
-		</comps>	
-		<inspectorTabs>
-			<li>ITab_Storage</li>
-		</inspectorTabs>
-		<designationHotKey>Misc12</designationHotKey>
-		<staticSunShadowHeight>0.5</staticSunShadowHeight>
-		<surfaceType>Item</surfaceType>
-		<description>Rottable things stored in this will not spoil</description>
-		<tickerType>Rare</tickerType>
+		</comps>
 		<designationCategory>Temperature</designationCategory>
-		<pathCost>30</pathCost>
-		<placeWorkers>
-			<li>PlaceWorker_Heater</li>
-		</placeWorkers>
 	</ThingDef>
-
-
 
 	<ThoughtDef>
 		<defName>FrostyBeer</defName>
