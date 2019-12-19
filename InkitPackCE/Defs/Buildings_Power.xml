@@ -60,9 +60,9 @@
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase">
-    <defName>WoodFiredGenerator</defName>
-    <label>wood-fired generator</label>
-    <description>Produces power by consuming wood. Must be periodically loaded with wood fuel by hand.</description>
+    <defName>GodGenerator</defName>
+    <label>次元发电机</label>
+    <description>消耗某神奇物质即可发电.</description>
     <thingClass>Building</thingClass>
     <graphicData>
       <texPath>Things/Building/Power/WoodFiredGenerator</texPath>
@@ -96,7 +96,7 @@
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerPlant</compClass>
-        <basePowerConsumption>-1000</basePowerConsumption>
+        <basePowerConsumption>-5000</basePowerConsumption>
         <transmitsPower>true</transmitsPower>
       </li>
       <li Class="CompProperties_Flickable" />
@@ -105,7 +105,7 @@
         <fuelCapacity>120</fuelCapacity>
         <fuelFilter>
           <thingDefs>
-            <li>WoodLog</li>
+            <li>Wool_HKCat</li>
           </thingDefs>
         </fuelFilter>
       </li>

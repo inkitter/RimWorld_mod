@@ -5,27 +5,31 @@
     <stuffCategories>
       <li>HCat_stuff</li>
     </stuffCategories>
+
+    <thingClass>D9ASB.RangedShieldBelt</thingClass>
+    <tickerType>Normal</tickerType>
+
     <generateCommonality>0</generateCommonality>
     <tradeability>Sellable</tradeability>
     <thingCategories>
       <li>Apparel</li>
     </thingCategories>
     <statBases>
-      <MarketValue>500</MarketValue>
+      <MarketValue>100</MarketValue>
       <Flammability>0</Flammability>
 			<MaxHitPoints>1000</MaxHitPoints>
 			<WorkToMake>15000</WorkToMake>
       <DeteriorationRate>0</DeteriorationRate>
       <Mass>1</Mass>
       <Beauty>7</Beauty>
-      <ArmorRating_Sharp>10</ArmorRating_Sharp>
-      <ArmorRating_Blunt>10</ArmorRating_Blunt>
-      <ArmorRating_Heat>10</ArmorRating_Heat>
-      <ArmorRating_Electric>10</ArmorRating_Electric>
-      <StuffEffectMultiplierArmor>10</StuffEffectMultiplierArmor>
-      <!-- <EnergyShieldEnergyMax>10</EnergyShieldEnergyMax>
-      <EnergyShieldRechargeRate>0.5</EnergyShieldRechargeRate> -->
-      <EquipDelay>1</EquipDelay>
+      <ArmorRating_Sharp>100</ArmorRating_Sharp>
+      <ArmorRating_Blunt>100</ArmorRating_Blunt>
+      <ArmorRating_Heat>100</ArmorRating_Heat>
+      <ArmorRating_Electric>100</ArmorRating_Electric>
+      <StuffEffectMultiplierArmor>1</StuffEffectMultiplierArmor>
+      <EnergyShieldEnergyMax>5</EnergyShieldEnergyMax>
+      <EnergyShieldRechargeRate>0.3</EnergyShieldRechargeRate>
+      <EquipDelay>0</EquipDelay>
     </statBases>
     <useHitPoints>false</useHitPoints>
     <equippedStatOffsets>
@@ -47,9 +51,15 @@
         <li>Teeth</li>
         <li>Hands</li>
       </bodyPartGroups>
+
       <tags>
         <li>IndustrialBasic</li>
+        <li>BeltDefense</li>
+		    <li>RangedShieldBelt</li>
       </tags>
+      
+      
+
       <defaultOutfitTags>
         <li>Worker</li>
         <li>Soldier</li>
@@ -69,10 +79,12 @@
     </graphicData>
     <apparel>
       <layers>
-        <li>Overhead</li>
-        <li>Shell</li>
-        <li>Middle</li>
+        <li>OnHead</li>
+        <li>StrappedHead</li>
+        <li>MiddleHead</li>
         <li>OnSkin</li>
+        <li>Middle</li>
+        <li>Shell</li>
         <li>Belt</li>
         <li>Backpack</li>
       </layers>

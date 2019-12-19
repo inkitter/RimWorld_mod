@@ -197,7 +197,22 @@
 			<li Class="CompProperties_Shearable">
 				<woolDef>Wool_HKCat</woolDef>
 				<shearIntervalDays>5</shearIntervalDays>
-				<woolAmount>1000</woolAmount>
+				<woolAmount>200</woolAmount>
+			</li>
+			<li Class="CompProperties_Milkable">
+				<milkDef>Milk</milkDef>
+				<milkIntervalDays>2</milkIntervalDays>
+				<milkAmount>12</milkAmount>
+			</li>
+			<li Class="CompProperties_EggLayer">
+				<eggUnfertilizedDef>Steel</eggUnfertilizedDef>
+       	 		<eggFertilizedDef>ComponentIndustrial</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>2</eggLayIntervalDays>
+				<eggCountRange>
+					<min>10</min>
+					<max>30</max>
+				</eggCountRange>
 			</li>
 		</comps>
 		<race>
@@ -287,7 +302,7 @@
 			<colorTwo>(100, 100, 100)</colorTwo>
 		</graphicData>
 		<statBases>
-			<MarketValue>14</MarketValue>
+			<MarketValue>5</MarketValue>
 			<StuffPower_Armor_Sharp>1</StuffPower_Armor_Sharp>
 			<StuffPower_Armor_Blunt>1</StuffPower_Armor_Blunt>
 			<StuffPower_Insulation_Cold>35</StuffPower_Insulation_Cold>
@@ -308,12 +323,12 @@
 		</graphicData>
 		<useHitPoints>false</useHitPoints>
 		<statBases>
-			<MarketValue>3</MarketValue>
+			<MarketValue>1</MarketValue>
 			<DeteriorationRate>0</DeteriorationRate>
-			<StuffPower_Armor_Sharp>10</StuffPower_Armor_Sharp>
-			<StuffPower_Armor_Blunt>10</StuffPower_Armor_Blunt>
-			<StuffPower_Armor_Heat>10</StuffPower_Armor_Heat>
-			<StuffPower_Armor_Electric>10</StuffPower_Armor_Electric>
+			<StuffPower_Armor_Sharp>1</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>1</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>1</StuffPower_Armor_Heat>
+			<StuffPower_Armor_Electric>1</StuffPower_Armor_Electric>
 			<SharpDamageMultiplier>1.5</SharpDamageMultiplier>
       		<BluntDamageMultiplier>2.0</BluntDamageMultiplier>
 		</statBases>
@@ -336,7 +351,7 @@
 				<MaxHitPoints>40</MaxHitPoints>
 				<Flammability>0</Flammability>
 				<Beauty>7</Beauty>
-				<DoorOpenSpeed>2</DoorOpenSpeed>
+				<DoorOpenSpeed>1.7</DoorOpenSpeed>
 				<BedRestEffectiveness>1.1</BedRestEffectiveness>
 				<MeleeWeapon_CooldownMultiplier>0.5</MeleeWeapon_CooldownMultiplier>
 			</statFactors>

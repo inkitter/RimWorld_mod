@@ -111,7 +111,7 @@
     <generateCommonality>0</generateCommonality>
     <useHitPoints>false</useHitPoints>
     <graphicData>
-      <texPath>Things/Ammo/Rifle/Incendiary</texPath>
+      <texPath>Things/Ammo/Charged/Ion</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
 		<tradeTags>
@@ -121,25 +121,27 @@
 		<thingCategories>
 			<li>AmmoGod</li>
 		</thingCategories>
-    <ammoClass>IncendiaryAP</ammoClass>
 	</ThingDef>
 
   <ThingDef Class="CombatExtended.AmmoDef" ParentName="AmmoGodBase">
     <defName>Ammo_Bullet7</defName>
     <label>试制型子弹7</label>
     <cookOffProjectile>Bullet_Bullet7</cookOffProjectile>
+    <ammoClass>IncendiaryAP</ammoClass>
   </ThingDef>
 
   <ThingDef Class="CombatExtended.AmmoDef" ParentName="AmmoGodBase">
     <defName>Ammo_BulletH</defName>
     <label>试制型子弹H</label>
     <cookOffProjectile>Bullet_BulletH</cookOffProjectile>
+    <ammoClass>Charged</ammoClass>
   </ThingDef>
 
   <ThingDef Class="CombatExtended.AmmoDef" ParentName="AmmoGodBase">
     <defName>Ammo_BulletS</defName>
     <label>试制型子弹S</label>
     <cookOffProjectile>Bullet_BulletS</cookOffProjectile>
+    <ammoClass>Ionized</ammoClass>
   </ThingDef>
 
   <ThingDef Class="CombatExtended.AmmoDef" Name="BaseAmmoGodBullet" ParentName="BaseBullet" Abstract="true">
@@ -159,20 +161,20 @@
     <label>试制型子弹7</label>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <damageAmountBase>10</damageAmountBase>
-      <armorPenetrationSharp>14</armorPenetrationSharp>
-	    <armorPenetrationBlunt>67.340</armorPenetrationBlunt>
+      <armorPenetrationSharp>16</armorPenetrationSharp>
+	    <armorPenetrationBlunt>55</armorPenetrationBlunt>
       <secondaryDamage>
-        <li>
+        <!-- <li>
           <def>Flame_Secondary</def>
           <amount>1</amount>
         </li>
         <li>
 			  	<def>Bomb_Secondary</def>
 			  	<amount>1</amount>
-				</li>
+				</li> -->
         <li>
           <def>EMP</def>
-          <amount>10</amount>
+          <amount>17</amount>
         </li>
       </secondaryDamage>
     </projectile>
@@ -184,7 +186,7 @@
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <damageAmountBase>1</damageAmountBase>
       <armorPenetrationSharp>4</armorPenetrationSharp>
-	    <armorPenetrationBlunt>67.340</armorPenetrationBlunt>
+	    <armorPenetrationBlunt>55</armorPenetrationBlunt>
       <secondaryDamage>
         <li>
           <def>HealGunHeal</def>
@@ -198,13 +200,13 @@
     <defName>Bullet_BulletS</defName>
     <label>试制型子弹S</label>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
-      <damageAmountBase>2</damageAmountBase>
-      <armorPenetrationSharp>15</armorPenetrationSharp>
-	    <armorPenetrationBlunt>67.340</armorPenetrationBlunt>
+      <damageAmountBase>7</damageAmountBase>
+      <armorPenetrationSharp>14</armorPenetrationSharp>
+	    <armorPenetrationBlunt>55</armorPenetrationBlunt>
       <secondaryDamage>
         <li>
           <def>EMP</def>
-          <amount>10</amount>
+          <amount>7</amount>
         </li>
       </secondaryDamage>
     </projectile>
