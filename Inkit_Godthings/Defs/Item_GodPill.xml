@@ -1,8 +1,8 @@
 ﻿<Defs>
   <ThingDef ParentName="MakeableDrugBase">
-    <defName>GodPill</defName>
-    <label>God's Pill</label>
-    <description>God's Pill</description>
+    <defName>Pill</defName>
+    <label>Pill</label>
+    <description>Pill</description>
     <graphicData>
       <texPath>Things/Item/Drug/Luciferium</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -23,7 +23,7 @@
       <drugCategory>Social</drugCategory>
       <outcomeDoers>
         <li Class="IngestionOutcomeDoer_GiveHediff">
-          <hediffDef>GodPillHigh</hediffDef>
+          <hediffDef>PillHigh</hediffDef>
           <severity>1</severity>
         </li>
         <li Class="IngestionOutcomeDoer_OffsetNeed">
@@ -46,9 +46,6 @@
       <li Class="CompProperties_Targetable">
         <compClass>CompTargetable_SingleCorpse</compClass>
       </li>
-      <!-- <li Class="CompProperties_Targetable">
-        <compClass>CompTargetable_SinglePawn</compClass>
-      </li> -->
       <li>
         <compClass>CompTargetEffect_Resurrect</compClass>
       </li>
@@ -70,9 +67,9 @@
   </ThingDef>
 
   <HediffDef>
-    <defName>GodPillHigh</defName>
+    <defName>PillHigh</defName>
     <hediffClass>HediffWithComps</hediffClass>
-    <label>GodPillHigh</label>
+    <label>PillHigh</label>
     <defaultLabelColor>(0.1,0.7,0.2)</defaultLabelColor>
     <scenarioCanAdd>true</scenarioCanAdd>
     <maxSeverity>1.0</maxSeverity>
@@ -82,8 +79,8 @@
     </comps>
     <stages>
       <li>
-        <hungerRateFactorOffset>-0.8</hungerRateFactorOffset>
-        <restFallFactor>0.2</restFallFactor>
+        <hungerRateFactorOffset>-0.85</hungerRateFactorOffset>
+        <restFallFactor>0.25</restFallFactor>
         <socialFightChanceFactor>-1</socialFightChanceFactor>
         <capMods>
           <li>
@@ -134,46 +131,40 @@
           </li>
         </capMods>
         <statOffsets>
-          <PsychicSensitivity>-2</PsychicSensitivity>
+          <PsychicSensitivity>2</PsychicSensitivity>
           <PainShockThreshold>2</PainShockThreshold>
           <ToxicSensitivity>-2</ToxicSensitivity>
           <MentalBreakThreshold>-2</MentalBreakThreshold>
-          <SmokeSensitivity>-2</SmokeSensitivity>
           <Flammability>-2</Flammability>
-          <Suppressability>-2</Suppressability>
 
-          <ComfyTemperatureMin>-100</ComfyTemperatureMin>
-          <ComfyTemperatureMax>100</ComfyTemperatureMax>
+          <ComfyTemperatureMin>-25</ComfyTemperatureMin>
+          <ComfyTemperatureMax>25</ComfyTemperatureMax>
 
           <WorkSpeedGlobal>0.3</WorkSpeedGlobal>
-          <!-- <ImmunityGainSpeed>10</ImmunityGainSpeed> -->
-          <!-- <JoyGainFactor>100</JoyGainFactor> -->
-          <!-- <HungerRateMultiplier>-0.95</HungerRateMultiplier> -->
+          <GlobalLearningFactor>0.3</GlobalLearningFactor>
 
-          <MoveSpeed>100</MoveSpeed>
-          <AimingDelayFactor>-0.4</AimingDelayFactor>
-          <!-- <ShootingAccuracyPawn>3</ShootingAccuracyPawn> -->
-          <ArmorRating_Blunt>1000</ArmorRating_Blunt>
-          <ArmorRating_Sharp>1000</ArmorRating_Sharp>
-          <ArmorRating_Heat>1000</ArmorRating_Heat>
-          <ArmorRating_Electric>1000</ArmorRating_Electric>
-          <!-- <AverageSharpArmor>1</AverageSharpArmor> -->
-          <!-- <BodyPartSharpArmor>100</BodyPartSharpArmor>
-          <BodyPartBluntArmor>100</BodyPartBluntArmor> -->
+          <MoveSpeed>46</MoveSpeed>
+          <AimingDelayFactor>-0.3</AimingDelayFactor>
+          <ShootingAccuracyPawn>5</ShootingAccuracyPawn>
+          <ArmorRating_Blunt>0.6</ArmorRating_Blunt>
+          <ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+          <ArmorRating_Heat>0.6</ArmorRating_Heat>
+
+          <MeleeDodgeChance>75</MeleeDodgeChance>
+          <MeleeHitChance>100</MeleeHitChance>
+
+          <CarryingCapacity>30</CarryingCapacity>
           
-
-          <MeleeDodgeChance>200</MeleeDodgeChance>
-          <MeleeParryChance>200</MeleeParryChance>
-          <MeleeHitChance>200</MeleeHitChance>
-          <MeleeCritChance>50</MeleeCritChance>
-          <!-- <UnarmedDamage>5</UnarmedDamage>
-          <MeleeArmorPenetration>200</MeleeArmorPenetration> -->
-
-          <CarryingCapacity>20</CarryingCapacity>
-          <CarryWeight>10</CarryWeight>
-          <CarryBulk>10</CarryBulk>
+          <PawnBeauty>2</PawnBeauty>
+          <ImmunityGainSpeed>0.50</ImmunityGainSpeed>
           
         </statOffsets>
+        <statFactors>
+          <IncomingDamageFactor>0.25</IncomingDamageFactor>
+          <PsychicEntropyRecoveryRate>2</PsychicEntropyRecoveryRate>
+          <PsychicEntropyGain>2</PsychicEntropyGain>
+          <PsychicEntropyMax>2</PsychicEntropyMax>
+        </statFactors>
         <makeImmuneTo>
           <li>Malaria</li>
           <li>SleepingSickness</li>
@@ -196,23 +187,25 @@
           <li>Asthma</li>
           <li>HeartArteryBlockage</li>
           <li>Carcinoma</li>
-          <li>MuscleSpasms</li>
-          <li>VenomBuildup</li>
+          <li>FibrousMechanites</li>
+          <li>SensoryMechanites</li>
+          <li>MuscleParasites</li>
+          <li>Animal_Flu</li>
         </makeImmuneTo>
       </li>
     </stages>
   </HediffDef>
   
   <ThoughtDef>
-    <defName>GodPillHigh</defName>
+    <defName>PillHigh</defName>
     <workerClass>ThoughtWorker_Hediff</workerClass>
-    <hediff>GodPillHigh</hediff>
+    <hediff>PillHigh</hediff>
     <validWhileDespawned>true</validWhileDespawned>
     <stages>
       <li>
-        <label>high on GodsPill</label>
+        <label>high on Pill</label>
         <description>I'm Goddddd.</description>
-        <baseMoodEffect>75</baseMoodEffect>
+        <baseMoodEffect>60</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>

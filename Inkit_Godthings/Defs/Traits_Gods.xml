@@ -1,0 +1,30 @@
+﻿<Defs>
+  <TraitDef>
+    <defName>Godson</defName>
+    <commonality>0.01</commonality>
+    <degreeDatas>
+      <li>
+        <label>Godson</label>
+        <description>Son of God.</description>
+        <statOffsets>
+          <MedicalTendQuality>50</MedicalTendQuality>
+          <MedicalOperationSpeed>0.6</MedicalOperationSpeed>
+        </statOffsets>
+        <skillGains>
+					<li><key>Medicine</key><value>10</value></li>
+          <li><key>Crafting</key><value>10</value></li>
+					<li><key>Mining</key><value>10</value></li>
+          <li><key>Cooking</key><value>10</value></li>
+          <li><key>Intellectual</key><value>10</value></li>
+          <li><key>Artistic</key><value>10</value></li>
+					<li><key>Construction</key><value>10</value></li>
+          <li><key>Social</key><value>10</value></li>
+          <li><key>Plants</key><value>10</value></li>
+          <li><key>Melee</key><value>10</value></li>
+          <li><key>Shooting</key><value>10</value></li>
+          <li><key>Animals</key><value>10</value></li>
+				</skillGains>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+</Defs>
