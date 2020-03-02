@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<MURWallLight_LightRadName>光照半径</MURWallLight_LightRadName>
+	<MURWallLight_LightRadDesc>How far the light radiates from the source. Default: 8</MURWallLight_LightRadDesc>
+	<MURWallLight_SteelCostName>钢铁消耗</MURWallLight_SteelCostName>
+	<MURWallLight_SteelCostDesc>How much steel a single light costs to build. Default: 5</MURWallLight_SteelCostDesc>
+	<MURWallLight_PowerCostName>电力消耗</MURWallLight_PowerCostName>
+	<MURWallLight_PowerCostDesc>How much power a single light consumes. Default: 10</MURWallLight_PowerCostDesc>
+	<MURWallLight_ShowRadiusName>修正光照</MURWallLight_ShowRadiusName>
+	<MURWallLight_ShowRadiusDesc>Show approximate area around lights that will be lit. EXPERIMENTAL: Currently only works with the default light radius of 8.</MURWallLight_ShowRadiusDesc>
+	
+	<MURWallLight_WarningNeedWall>必须放在墙上</MURWallLight_WarningNeedWall>
+	<MURWallLight_WarningBlocked>必须面向可通过的格子</MURWallLight_WarningBlocked>
+	<MURWallLight_WarningBoth>必须放在墙上，面向可通过的格子</MURWallLight_WarningBoth>
+	
+	<MURWallLight_AlertDisableRadius>Show Lit Area currently only works with the default light radius setting of 8. Disabling.</MURWallLight_AlertDisableRadius>
+	<MURWallLight_AlertReload>请重启游戏来更新设置</MURWallLight_AlertReload>
+	
+	<MURWallLight_DestroyedBlocked>墙灯被摧毁了</MURWallLight_DestroyedBlocked>
+	<MURWallLight_DestroyedWall>墙被拆了，墙灯也被摧毁了</MURWallLight_DestroyedWall>
+</LanguageData>

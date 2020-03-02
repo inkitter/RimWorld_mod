@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<TerrainDef Name="CarpetBaseCar" ParentName="FloorBase" Abstract="True">
+	<DesignatorDropdownGroupDef>
+    	<defName>Floor_Carpet_Super</defName>
+  	</DesignatorDropdownGroupDef>
+
+	<TerrainDef Name="CarpetBaseSuper" ParentName="FloorBase" Abstract="True">
 		<texturePath>Terrain/Surfaces/Carpet</texturePath>
-		<designatorDropdown>Floor_Carpet</designatorDropdown>
-		<costList>
-			<WoodLog>1</WoodLog>
-		</costList>
+		<designatorDropdown>Floor_Carpet_Super</designatorDropdown>
 		<statBases>
 			<Beauty>7</Beauty>
 			<WorkToBuild>1000</WorkToBuild>
@@ -14,28 +15,37 @@
 		</statBases>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<constructEffect>ConstructMetal</constructEffect>
-		<pathCost>-2</pathCost>
+		
 		<layerable>true</layerable>
 		<tags>
 			<li>FineFloor</li>
 		</tags>
   	</TerrainDef>
 
-	<TerrainDef ParentName="CarpetBaseCar">
+	<TerrainDef ParentName="CarpetBaseSuper">
 		<defName>Tile_SMCar</defName>
-		<label>超合金地毯</label>
+		<label>植质地毯</label>
 		<renderPrecedence>199</renderPrecedence>
 		<fertility>5</fertility>
 		<description>用物质提取出神奇的液体，再经压缩制成的地毯，有养分。</description>
 		<color>(117,117,117)</color>
+		<pathCost>-3</pathCost>
+		<costList>
+			<WoodLog>1</WoodLog>
+		</costList>
 	</TerrainDef>
 
-	<TerrainDef ParentName="CarpetBaseCar">
+
+	<TerrainDef ParentName="CarpetBaseSuper">
 		<defName>Tile_SMFloor</defName>
-		<label>超合金地板</label>
+		<label>合金地板</label>
 		<renderPrecedence>200</renderPrecedence>
 		<fertility>0</fertility>
 		<description>用物质提取出神奇的液体，再经高能冲压制成的地板。</description>
 		<color>(77,77,77)</color>
+		<pathCost>1</pathCost>
+		<costList>
+			<Steel>1</Steel>
+		</costList>
 	</TerrainDef>
 </Defs>

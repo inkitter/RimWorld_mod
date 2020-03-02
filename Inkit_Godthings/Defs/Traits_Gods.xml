@@ -9,6 +9,7 @@
         <statOffsets>
           <MedicalTendQuality>50</MedicalTendQuality>
           <MedicalOperationSpeed>0.6</MedicalOperationSpeed>
+          <PawnBeauty>2</PawnBeauty>
         </statOffsets>
         <skillGains>
 					<li><key>Medicine</key><value>10</value></li>

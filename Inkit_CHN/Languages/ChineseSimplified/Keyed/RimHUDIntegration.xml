@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RimHUD.Integration.GetMod>mod链接</RimHUD.Integration.GetMod>
+
+  <RimHUD.Integration.General>常规设置</RimHUD.Integration.General>
+  <RimHUD.Integration.Bubbles>Interaction Bubbles-聊天气泡</RimHUD.Integration.Bubbles>
+
+  <RimHUD.Integration.Bubbles.Activated>已激活</RimHUD.Integration.Bubbles.Activated>
+  <RimHUD.Integration.Bubbles.DoNonPlayer>显示非玩家派系的互动</RimHUD.Integration.Bubbles.DoNonPlayer>
+  <RimHUD.Integration.Bubbles.DoAnimals>显示动物的互动</RimHUD.Integration.Bubbles.DoAnimals>
+
+  <RimHUD.Integration.Bubbles.MinScale>最小缩放可见</RimHUD.Integration.Bubbles.MinScale>
+  <RimHUD.Integration.Bubbles.ScaleStart>缩放到起始比例</RimHUD.Integration.Bubbles.ScaleStart>
+  <RimHUD.Integration.Bubbles.MaxWidth>最大宽度</RimHUD.Integration.Bubbles.MaxWidth>
+  <RimHUD.Integration.Bubbles.Spacing>间隔</RimHUD.Integration.Bubbles.Spacing>
+  <RimHUD.Integration.Bubbles.StartOffset>标签位移量</RimHUD.Integration.Bubbles.StartOffset>
+  <RimHUD.Integration.Bubbles.OffsetDirection>位移方向</RimHUD.Integration.Bubbles.OffsetDirection>
+  <RimHUD.Integration.Bubbles.OffsetDirections>下|左|上|右</RimHUD.Integration.Bubbles.OffsetDirections>
+  <RimHUD.Integration.Bubbles.StartOpacity>起始不透明度</RimHUD.Integration.Bubbles.StartOpacity>
+  <RimHUD.Integration.Bubbles.MouseOverOpacity>鼠标悬浮不透明度</RimHUD.Integration.Bubbles.MouseOverOpacity>
+
+  <RimHUD.Integration.Bubbles.MinTime>最小淡出时间</RimHUD.Integration.Bubbles.MinTime>
+  <RimHUD.Integration.Bubbles.FadeStart>起始淡出时间</RimHUD.Integration.Bubbles.FadeStart>
+  <RimHUD.Integration.Bubbles.FadeLength>淡出时间</RimHUD.Integration.Bubbles.FadeLength>
+  <RimHUD.Integration.Bubbles.MaxPerPawn>气泡出现最大人数</RimHUD.Integration.Bubbles.MaxPerPawn>
+
+  <RimHUD.Integration.Bubbles.FontSize>字体大小</RimHUD.Integration.Bubbles.FontSize>
+  <RimHUD.Integration.Bubbles.PaddingX>文本内边距X</RimHUD.Integration.Bubbles.PaddingX>
+  <RimHUD.Integration.Bubbles.PaddingY>文本内边距Y</RimHUD.Integration.Bubbles.PaddingY>
+
+  <RimHUD.Integration.Bubbles.Colors>气泡颜色</RimHUD.Integration.Bubbles.Colors>
+  <RimHUD.Integration.Bubbles.ForeColor>文字颜色</RimHUD.Integration.Bubbles.ForeColor>
+  <RimHUD.Integration.Bubbles.BackColor>背景颜色</RimHUD.Integration.Bubbles.BackColor>
+  <RimHUD.Integration.Bubbles.SelectedForeColor>被选时气泡的文字颜色</RimHUD.Integration.Bubbles.SelectedForeColor>
+  <RimHUD.Integration.Bubbles.SelectedBackColor>被选时气泡的背景颜色</RimHUD.Integration.Bubbles.SelectedBackColor>
+
+  <RimHUD.Integration.PawnRules>Pawn Rules-个体规则</RimHUD.Integration.PawnRules>
+  <RimHUD.Integration.PawnRules.RuleNameFormat>规则：{0}</RimHUD.Integration.PawnRules.RuleNameFormat>
+  <RimHUD.Integration.PawnRules.ReplaceFoodSelector>替换食物选择</RimHUD.Integration.PawnRules.ReplaceFoodSelector>
+  <RimHUD.Integration.PawnRules.ReplaceFoodSelectorDesc>如果启用，食物选择器将被规则选择器替换。</RimHUD.Integration.PawnRules.ReplaceFoodSelectorDesc>
+  <RimHUD.Integration.PawnRules.HideGizmo>隐藏Gizmo</RimHUD.Integration.PawnRules.HideGizmo>
+  <RimHUD.Integration.PawnRules.HideGizmoDesc>禁用出现在按钮旁边的gizmo，因为RimHUD在inspect窗格中添加了一个规则按钮。</RimHUD.Integration.PawnRules.HideGizmoDesc>
+
+</LanguageData>

@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RimHUD.Theme.HudPosition>HUD位置</RimHUD.Theme.HudPosition>
+  <RimHUD.Theme.HudDocked>检视面板固定在原版位置</RimHUD.Theme.HudDocked>
+  <RimHUD.Theme.HudDockedDesc>该项启用时，在下方“检视面板”处进行修改。</RimHUD.Theme.HudDockedDesc>
+  <RimHUD.Theme.HudAnchor>HUD位置</RimHUD.Theme.HudAnchor>
+  <RimHUD.Theme.HudAnchors>左上|中上|右上|左中|正中|右中|左下|中下|右下</RimHUD.Theme.HudAnchors>
+  <RimHUD.Theme.HudOffsetX>X轴位移</RimHUD.Theme.HudOffsetX>
+  <RimHUD.Theme.HudOffsetY>Y轴位移</RimHUD.Theme.HudOffsetY>
+
+  <RimHUD.Theme.RefreshRate>刷新率</RimHUD.Theme.RefreshRate>
+  <RimHUD.Theme.RefreshRateDesc>HUD将多久刷新一次。如果帧率下降，将该项设置为更高数值。</RimHUD.Theme.RefreshRateDesc>
+  <RimHUD.Theme.RefreshRateUnits>毫秒</RimHUD.Theme.RefreshRateUnits>
+
+  <RimHUD.Theme.HudDimensions>HUD大小</RimHUD.Theme.HudDimensions>
+  <RimHUD.Theme.HudWidth>宽度</RimHUD.Theme.HudWidth>
+  <RimHUD.Theme.HudHeight>高度</RimHUD.Theme.HudHeight>
+
+  <RimHUD.Theme.TextOptions>文字选项</RimHUD.Theme.TextOptions>
+
+  <RimHUD.Theme.TextStyleRegular>常规文本</RimHUD.Theme.TextStyleRegular>
+  <RimHUD.Theme.TextStyleLarge>标题文本</RimHUD.Theme.TextStyleLarge>
+  <RimHUD.Theme.TextStyleSmall>描述文本</RimHUD.Theme.TextStyleSmall>
+  <RimHUD.Theme.LabelWidth>标签宽度</RimHUD.Theme.LabelWidth>
+  <RimHUD.Theme.ValueWidth>数值宽度</RimHUD.Theme.ValueWidth>
+
+  <RimHUD.Theme.InspectPane>检视面板</RimHUD.Theme.InspectPane>
+  <RimHUD.Theme.InspectPaneModify>修改</RimHUD.Theme.InspectPaneModify>
+  <RimHUD.Theme.InspectPaneModifyDesc>在启用“检视面板固定在原版位置”时，该项必须启用。</RimHUD.Theme.InspectPaneModifyDesc>
+  <RimHUD.Theme.InspectPaneAddLog>显示角色的日志</RimHUD.Theme.InspectPaneAddLog>
+  <RimHUD.Theme.InspectPaneAddLogDesc>用所选角色的日志填充原版检视面板。在禁用“检视面板固定在原版位置”时，该项才能启用。</RimHUD.Theme.InspectPaneAddLogDesc>
+  <RimHUD.Theme.InspectPaneHeight>面板高度</RimHUD.Theme.InspectPaneHeight>
+  <RimHUD.Theme.InspectPaneMinTabs>最少选项卡</RimHUD.Theme.InspectPaneMinTabs>
+  <RimHUD.Theme.InspectPaneTabWidth>面板宽度</RimHUD.Theme.InspectPaneTabWidth>
+
+  <RimHUD.Theme.OtherOptions>其他选项</RimHUD.Theme.OtherOptions>
+
+  <RimHUD.Theme.ShowDecimals>显示小数</RimHUD.Theme.ShowDecimals>
+  <RimHUD.Theme.LetterPadding>通知间距</RimHUD.Theme.LetterPadding>
+  <RimHUD.Theme.LetterPaddingDesc>更改出现在屏幕右侧的通知信件之间的距离。原版默认：12</RimHUD.Theme.LetterPaddingDesc>
+  <RimHUD.Theme.LetterCompress>压缩通知</RimHUD.Theme.LetterCompress>
+  <RimHUD.Theme.LetterCompressDesc>如果右侧通知与HUD重叠，将会压缩通知和警告文本。</RimHUD.Theme.LetterCompressDesc>
+
+  <RimHUD.Theme.HudColors>HUD颜色</RimHUD.Theme.HudColors>
+
+  <RimHUD.Theme.MainTextColor>主要文本颜色</RimHUD.Theme.MainTextColor>
+  <RimHUD.Theme.DisabledColor>“禁用”等级文本颜色</RimHUD.Theme.DisabledColor>
+  <RimHUD.Theme.CriticalColor>“危险”等级文本颜色</RimHUD.Theme.CriticalColor>
+  <RimHUD.Theme.WarningColor>“警告”等级文本颜色</RimHUD.Theme.WarningColor>
+  <RimHUD.Theme.InfoColor>“普通”等级文本颜色</RimHUD.Theme.InfoColor>
+  <RimHUD.Theme.GoodColor>“良好”等级文本颜色</RimHUD.Theme.GoodColor>
+  <RimHUD.Theme.ExcellentColor>“极佳”等级文本颜色</RimHUD.Theme.ExcellentColor>
+  <RimHUD.Theme.BarBackgroundColor>数值条背景颜色</RimHUD.Theme.BarBackgroundColor>
+  <RimHUD.Theme.BarMainColor>数值条主色</RimHUD.Theme.BarMainColor>
+  <RimHUD.Theme.BarLowColor>数值条低色偏</RimHUD.Theme.BarLowColor>
+  <RimHUD.Theme.BarThresholdColor>数值条阈值条颜色</RimHUD.Theme.BarThresholdColor>
+  <RimHUD.Theme.SelectorBackgroundColor>被选时背景颜色</RimHUD.Theme.SelectorBackgroundColor>
+  <RimHUD.Theme.SelectorTextColor>被选时文本颜色</RimHUD.Theme.SelectorTextColor>
+  <RimHUD.Theme.LineColor>线条颜色</RimHUD.Theme.LineColor>
+
+  <RimHUD.Theme.FactionColors>派系颜色</RimHUD.Theme.FactionColors>
+  <RimHUD.Theme.FactionOwnColor>殖民者</RimHUD.Theme.FactionOwnColor>
+  <RimHUD.Theme.FactionAlliedColor>同盟</RimHUD.Theme.FactionAlliedColor>
+  <RimHUD.Theme.FactionIndependentColor>独立</RimHUD.Theme.FactionIndependentColor>
+  <RimHUD.Theme.FactionHostileColor>敌对</RimHUD.Theme.FactionHostileColor>
+  <RimHUD.Theme.FactionWildColor>野外</RimHUD.Theme.FactionWildColor>
+
+  <RimHUD.Theme.SkillColors>技能</RimHUD.Theme.SkillColors>
+  <RimHUD.Theme.SkillMinorPassionColor>有点兴趣</RimHUD.Theme.SkillMinorPassionColor>
+  <RimHUD.Theme.SkillMajorPassionColor>很感兴趣</RimHUD.Theme.SkillMajorPassionColor>
+
+  <RimHUD.TextStyle.Size>字号</RimHUD.TextStyle.Size>
+  <RimHUD.TextStyle.Height>字高</RimHUD.TextStyle.Height>
+
+</LanguageData>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <XenophobeVsXenophile.stages.0.label>排外主义 vs 亲外主义</XenophobeVsXenophile.stages.0.label>
+
+  <XenophobiaVsAlien.stages.0.label>亲外主义喜欢外星人</XenophobiaVsAlien.stages.0.label>
+  <XenophobiaVsAlien.stages.0.description>亲外主义喜爱外星人</XenophobiaVsAlien.stages.0.description>
+  <XenophobiaVsAlien.stages.1.label>排外主义厌恶外星人</XenophobiaVsAlien.stages.1.label>
+  <XenophobiaVsAlien.stages.1.description>排外主义憎恶外星人</XenophobiaVsAlien.stages.1.description>
+
+  <AlienVsXenophobia.stages.0.label>外星人喜欢亲外主义</AlienVsXenophobia.stages.0.label>
+  <AlienVsXenophobia.stages.1.label>外星人讨厌排外主义</AlienVsXenophobia.stages.1.label>
+
+
+</LanguageData>

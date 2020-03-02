@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Uncomment and modify the line below if you would like your name to be credited in the config window -->
+  <!--<RimHUD.Language.TranslatedBy>translated by Jaxe</RimHUD.Language.TranslatedBy>-->
+  <RimHUD.Language.AdjectiveNounOrder>{0} {1}</RimHUD.Language.AdjectiveNounOrder>
+
+  <RimHUD.ToggleHud>显示HUD</RimHUD.ToggleHud>
+
+  <RimHUD.Button.OK>确定</RimHUD.Button.OK>
+  <RimHUD.Button.Yes>是</RimHUD.Button.Yes>
+  <RimHUD.Button.No>否</RimHUD.Button.No>
+  <RimHUD.Button.Cancel>取消</RimHUD.Button.Cancel>
+  <RimHUD.Button.Close>关闭</RimHUD.Button.Close>
+  <RimHUD.Button.Save>保存</RimHUD.Button.Save>
+
+  <RimHUD.Dialog_Config.Title>RimHUD</RimHUD.Dialog_Config.Title>
+  <RimHUD.Dialog_Config.SetToDefault>还原至默认配置</RimHUD.Dialog_Config.SetToDefault>
+  <RimHUD.Dialog_Config.OpenFolder>打开配置文件夹</RimHUD.Dialog_Config.OpenFolder>
+
+  <RimHUD.Dialog_Config.Tab.Design>设计</RimHUD.Dialog_Config.Tab.Design>
+
+  <RimHUD.Dialog_Config.Tab.Colors>颜色</RimHUD.Dialog_Config.Tab.Colors>
+  <RimHUD.Dialog_Config.Tab.Colors.Editor>编辑 {0}</RimHUD.Dialog_Config.Tab.Colors.Editor>
+  <RimHUD.Dialog_Config.Tab.Colors.Hue>色相</RimHUD.Dialog_Config.Tab.Colors.Hue>
+  <RimHUD.Dialog_Config.Tab.Colors.Saturation>饱和度</RimHUD.Dialog_Config.Tab.Colors.Saturation>
+  <RimHUD.Dialog_Config.Tab.Colors.Lightness>明度</RimHUD.Dialog_Config.Tab.Colors.Lightness>
+  <RimHUD.Dialog_Config.Tab.Colors.Alpha>透明度</RimHUD.Dialog_Config.Tab.Colors.Alpha>
+  <RimHUD.Dialog_Config.Tab.Colors.Hex>Hex值</RimHUD.Dialog_Config.Tab.Colors.Hex>
+
+  <RimHUD.Dialog_Config.Tab.Content>内容</RimHUD.Dialog_Config.Tab.Content>
+  <RimHUD.Dialog_Config.Tab.Content.Preset>选择预设</RimHUD.Dialog_Config.Tab.Content.Preset>
+  <RimHUD.Dialog_Config.Tab.Content.Preset.Default>默认布局</RimHUD.Dialog_Config.Tab.Content.Preset.Default>
+  <RimHUD.Dialog_Config.Tab.Content.Preset.DefaultLoaded>将布局重置成默认布局</RimHUD.Dialog_Config.Tab.Content.Preset.DefaultLoaded>
+  <RimHUD.Dialog_Config.Tab.Content.Preset.Loaded>预设布局{0}已加载</RimHUD.Dialog_Config.Tab.Content.Preset.Loaded>
+  <RimHUD.Dialog_Config.Tab.Content.Mode>{0}模式</RimHUD.Dialog_Config.Tab.Content.Mode>
+  <RimHUD.Dialog_Config.Tab.Content.Mode.Docked>HUD固定</RimHUD.Dialog_Config.Tab.Content.Mode.Docked>
+  <RimHUD.Dialog_Config.Tab.Content.Mode.Floating>HUD悬浮</RimHUD.Dialog_Config.Tab.Content.Mode.Floating>
+  <RimHUD.Dialog_Config.Tab.Content.Editor>编辑 {0}模式</RimHUD.Dialog_Config.Tab.Content.Editor>
+  <RimHUD.Dialog_Config.Tab.Content.Layout>布局</RimHUD.Dialog_Config.Tab.Content.Layout>
+  <RimHUD.Dialog_Config.Tab.Content.Layout.SavePreset>保存为预设布局</RimHUD.Dialog_Config.Tab.Content.Layout.SavePreset>
+  <RimHUD.Dialog_Config.Tab.Content.Layout.ManagePresets>管理预设布局</RimHUD.Dialog_Config.Tab.Content.Layout.ManagePresets>
+  <RimHUD.Dialog_Config.Tab.Content.Component>组</RimHUD.Dialog_Config.Tab.Content.Component>
+  <RimHUD.Dialog_Config.Tab.Content.Component.MoveUp>上移</RimHUD.Dialog_Config.Tab.Content.Component.MoveUp>
+  <RimHUD.Dialog_Config.Tab.Content.Component.MoveDown>下移</RimHUD.Dialog_Config.Tab.Content.Component.MoveDown>
+  <RimHUD.Dialog_Config.Tab.Content.Component.Remove>移除</RimHUD.Dialog_Config.Tab.Content.Component.Remove>
+  <RimHUD.Dialog_Config.Tab.Content.Component.Stack>添加组</RimHUD.Dialog_Config.Tab.Content.Component.Stack>
+  <RimHUD.Dialog_Config.Tab.Content.Component.StackDesc>组可以包含其他组或内容面板。组的内容将根据选择的类型水平或垂直分布。</RimHUD.Dialog_Config.Tab.Content.Component.StackDesc>
+  <RimHUD.Dialog_Config.Tab.Content.Component.Panel>添加内容面板</RimHUD.Dialog_Config.Tab.Content.Component.Panel>
+  <RimHUD.Dialog_Config.Tab.Content.Component.PanelDesc>内容面板显示行的内容。</RimHUD.Dialog_Config.Tab.Content.Component.PanelDesc>
+  <RimHUD.Dialog_Config.Tab.Content.Component.Row>添加行</RimHUD.Dialog_Config.Tab.Content.Component.Row>
+  <RimHUD.Dialog_Config.Tab.Content.Component.RowDesc>如果一行的内容不止一个，它们会自动排列均匀显示。</RimHUD.Dialog_Config.Tab.Content.Component.RowDesc>
+  <RimHUD.Dialog_Config.Tab.Content.Component.Element>添加基础内容</RimHUD.Dialog_Config.Tab.Content.Component.Element>
+  <RimHUD.Dialog_Config.Tab.Content.Component.ElementDesc>在HUD上显示的数据。</RimHUD.Dialog_Config.Tab.Content.Component.ElementDesc>
+  <RimHUD.Dialog_Config.Tab.Content.Component.Stat>添加状态</RimHUD.Dialog_Config.Tab.Content.Component.Stat>
+  <RimHUD.Dialog_Config.Tab.Content.Component.Record>添加记录</RimHUD.Dialog_Config.Tab.Content.Component.Record>
+  <RimHUD.Dialog_Config.Tab.Content.Component.Need>添加需求数值条</RimHUD.Dialog_Config.Tab.Content.Component.Need>
+  <RimHUD.Dialog_Config.Tab.Content.Component.SkillOrTraining>添加技能或训练</RimHUD.Dialog_Config.Tab.Content.Component.SkillOrTraining>
+  <RimHUD.Dialog_Config.Tab.Content.Selected>已选择：</RimHUD.Dialog_Config.Tab.Content.Selected>
+  <RimHUD.Dialog_Config.Tab.Content.Selected.Filled>填充高度</RimHUD.Dialog_Config.Tab.Content.Selected.Filled>
+  <RimHUD.Dialog_Config.Tab.Content.Selected.FilledDesc>如果启用，将根据全部内容（包括当前隐藏内容）来调整高度。\n\n如果禁用，将根据当前显示内容来调整高度。</RimHUD.Dialog_Config.Tab.Content.Selected.FilledDesc>
+
+  <RimHUD.Dialog_Config.Tab.Integration>联动</RimHUD.Dialog_Config.Tab.Integration>
+
+  <RimHUD.Dialog_Presets.Title>用户预设</RimHUD.Dialog_Presets.Title>
+  <RimHUD.Dialog_Presets.Delete>删除所选</RimHUD.Dialog_Presets.Delete>
+
+  <RimHUD.Dialog_SavePreset.Title>保存预设</RimHUD.Dialog_SavePreset.Title>
+  <RimHUD.Dialog_SavePreset.Name>名字</RimHUD.Dialog_SavePreset.Name>
+  <RimHUD.Dialog_SavePreset.IncludeDocked>包括固定</RimHUD.Dialog_SavePreset.IncludeDocked>
+  <RimHUD.Dialog_SavePreset.IncludeFloating>包括悬浮</RimHUD.Dialog_SavePreset.IncludeFloating>
+  <RimHUD.Dialog_SavePreset.IncludeHeight>包括高度</RimHUD.Dialog_SavePreset.IncludeHeight>
+  <RimHUD.Dialog_SavePreset.IncludeWidth>包括宽度</RimHUD.Dialog_SavePreset.IncludeWidth>
+  <RimHUD.Dialog_SavePreset.IncludeTabs>包括最小选项卡</RimHUD.Dialog_SavePreset.IncludeTabs>
+
+  <RimHUD.Layout.UserPreset>[用户预设]</RimHUD.Layout.UserPreset>
+  <RimHUD.Layout.BuiltIn>[内置]</RimHUD.Layout.BuiltIn>
+
+  <RimHUD.Alert.ConfigReset>RimHUD已经更新至{0}并将其配置重置为默认</RimHUD.Alert.ConfigReset>
+  <RimHUD.Alert.SetToDefault>您确定要将这些设置还原为默认设置吗？</RimHUD.Alert.SetToDefault>
+  <RimHUD.Alert.InvalidLayout>RimHUD的这个布局包含无效内容或来自不再启用的其他mod的内容。\n\n这个布局被更改为默认布局。</RimHUD.Alert.InvalidLayout>
+  <RimHUD.Alert.Saved>预设{0}已经保存</RimHUD.Alert.Saved>
+  <RimHUD.Alert.ConfirmDelete>您确定要删除已保存的预设'{0}'吗？</RimHUD.Alert.ConfirmDelete>
+  <RimHUD.Alert.NotImplemented>这个特性还没有实现</RimHUD.Alert.NotImplemented>
+  <RimHUD.Alert.MoreComingSoon>更多的功能即将到来</RimHUD.Alert.MoreComingSoon>
+
+  <RimHUD.InspectPane.MedicalCare>更改{0}的医疗方针等级。\n\n目前：{1}</RimHUD.InspectPane.MedicalCare>
+
+</LanguageData>

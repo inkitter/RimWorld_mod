@@ -117,9 +117,9 @@
   </ThingDef>
   <!--========================= Autodoor =============================-->
   <ThingDef ParentName="DoorBase">
-    <defName>Autodoor</defName>
-    <label>autodoor</label>
-    <description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
+    <defName>Selfdoor</defName>
+    <label>防爆门</label>
+    <description>防爆门.</description>
     <statBases>
       <WorkToBuild>1000</WorkToBuild>
       <MaxHitPoints>5000</MaxHitPoints>
@@ -144,12 +144,13 @@
     <designationHotKey>Misc2</designationHotKey>
   </ThingDef>
   <!--========================= Wall =============================-->
-  <ThingDef ParentName="BuildingBase" Name="Wall">
-    <defName>Wall</defName>
-    <label>wall</label>
-    <description>An impassable wall. Capable of holding up a roof.</description>
+  <ThingDef ParentName="BuildingBase" Name="SuperWall">
+    <defName>SuperWall</defName>
+    <label>防爆墙</label>
+    <description>增强型的墙.</description>
     <thingClass>Building</thingClass>
     <category>Building</category>
+    <useHitPoints>false</useHitPoints>
     <graphicData>
       <texPath>Things/Building/Linked/Wall</texPath>
       <graphicClass>Graphic_Appearances</graphicClass>
@@ -206,12 +207,6 @@
         <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
       </blueprintGraphicData>
     </building>
-    <damageMultipliers>
-      <li>
-        <damageDef>Bomb</damageDef>
-        <multiplier>0.8</multiplier>
-      </li>
-    </damageMultipliers>
     <designationHotKey>Misc3</designationHotKey>
   </ThingDef>
 </Defs>

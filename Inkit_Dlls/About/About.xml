@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
 	<packageId>Inkit.dlls.mod</packageId>
-	<name>Inkit_Dlls</name>
+	<name>Inkit_01Dlls</name>
 	<author>Inkit</author>
     <url>https://inkit.cc</url>
 	<supportedVersions>
 		<li>1.1</li>
 	</supportedVersions>
 	<description>
-		None
+		组合的DLL库，排序尽量靠前，但要在HugsLib之后：
+		- 缩放调整
+		- 游戏速度增强
+		- 贸易点
+		- 墙灯
+		- 面板增强RimHUD
+		- 冰箱
+		- 堆叠mod
+		- 远程可用的护盾
 	</description>
 </ModMetaData>

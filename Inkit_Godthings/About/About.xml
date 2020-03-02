@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
 	<packageId>Inkit.Godthings.mod</packageId>
-	<name>Inkit_Godthings</name>
+	<name>Inkit_03Godthings</name>
 	<author>Inkit</author>
     <url>https://inkit.cc</url>
 	<supportedVersions>
@@ -9,6 +9,16 @@
 		<li>1.1</li>
 	</supportedVersions>
 	<description>
-		None
+		正义MOD。
+		- 防爆墙、门。结构菜单 Buildings_Defenses.xml
+		- 射击墙、铁丝网。防御菜单 Buildings_Defenses.xml
+		- 墙灯、太阳灯。家具菜单 Buildings_MURWallLight.xml Buildings_TWBSunLight.xml
+		- 正义的防尘大衣。缝纫台。 Item_Dustcloth.xml
+		- 正义的药片。烹饪台或制作点。 Item_GodPill.xml
+		- 正义的发电机、防爆电线。电力菜单  Buildings_Power.xml
+		- 贵族依然可以干所有工作。 RoyalTitles_Empire.xml
+		- 正义的地板。一种500%的养分，另一种没养分。 Tiles_SuperMetal.xml
+		- 一个特性Godson。 Traits_Gods.xml
+		- 很厉害的枪。 Item_SuperWeapon.xml
 	</description>
 </ModMetaData>

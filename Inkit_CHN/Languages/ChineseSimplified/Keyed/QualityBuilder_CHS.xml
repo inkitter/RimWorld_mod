@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+	
+	<QualityBuilder>精益求精</QualityBuilder>
+	<QualityBuilderCommand.Label>精益求精</QualityBuilderCommand.Label>
+
+	<QualityBuilderOn.Label>开启精益求精</QualityBuilderOn.Label>
+	<QualityBuilderOn.Desc>当前品质最低要求：{0}。点击开启，成品品质低于要求会自动拆除重造。</QualityBuilderOn.Desc>
+	<QualityBuilder.Already></QualityBuilder.Already>
+
+	<QualityBuilderOff.Label>取消精益求精</QualityBuilderOff.Label>
+	<QualityBuilderOff.Desc>当前品质最低要求：{0}。点击取消，成品品质低于要求不会自动拆除重造。</QualityBuilderOff.Desc>
+	<QualityBuilder.Nothing></QualityBuilder.Nothing>
+
+	<QualityBuilder.SelectedSettings>精益求精设置</QualityBuilder.SelectedSettings>
+	<QualityBuilder.CurrentMap>当前基地</QualityBuilder.CurrentMap>
+	<QualityBuilder.Global>默认设置</QualityBuilder.Global>
+	<QualityBuilder.EnableByDefault>默认开启精益求精</QualityBuilder.EnableByDefault>
+	<QualityBuilder.IgnoreAtSkill>参与精益求精物品建造的建造技能等级最低要求：{0}</QualityBuilder.IgnoreAtSkill>
+	<QualityBuilder.MinQuality>设置精益求精物品品质的最低要求</QualityBuilder.MinQuality>
+	<QualityBuilder.OverrideBestBuilder>设置以此人建造技能等级为最低要求，上面设定的技能等级要求将失效</QualityBuilder.OverrideBestBuilder>
+</LanguageData>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<packageId>Inkit.Texture.mod</packageId>
+	<name>Inkit_00Texture</name>
+	<author>Inkit</author>
+    <url>https://inkit.cc</url>
+	<supportedVersions>
+		<li>1.1</li>
+	</supportedVersions>
+	<description>
+		贴图补充包，防止缺贴图
+	</description>
+</ModMetaData>

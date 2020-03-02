@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="BuildingBase" Name="SuperMechBuildingBase" Abstract="True">
+    <designationCategory>Security</designationCategory>
+    <constructEffect>ConstructMetal</constructEffect>
+    <clearBuildingArea>false</clearBuildingArea>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <altitudeLayer>Building</altitudeLayer>
+    <building>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Linked/PowerConduit_Blueprint_Atlas</texPath>
+      </blueprintGraphicData>
+    </building>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.3</fillPercent>
+    <tickerType>Normal</tickerType>
+    <rotatable>true</rotatable>
+    <selectable>true</selectable>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <drawerType>MapMeshOnly</drawerType>
+    <repairEffect>ConstructMetal</repairEffect>
+    <forceDebugSpawnable>true</forceDebugSpawnable>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>1000</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Beauty>20</Beauty>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <generateCommonality>0</generateCommonality>
+    <costList>
+      <Steel>100</Steel>
+    </costList>
+  </ThingDef>
+
+  <ThingDef ParentName="SuperMechBuildingBase">
+    <defName>SuperShieldGeneratorMortar</defName>
+    <label>超级护盾</label>
+    <description>A shielding device which projects a momentum repulsor field. Shots can go out, but not in.\n\nThis one is tuned to high angles, so it will block mortar rounds.\n\nThe unit can be temporarily disabled by EMP attacks, either by shocking the projector unit itself, or using EMP munitions on the shield.</description>
+    <size>(1,1)</size>
+    <!-- <receivesSignals>true</receivesSignals> -->
+    
+    <graphicData>
+      <texPath>Things/Building/Mech/ShieldGeneratorMortar</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <shadowData>
+        <volume>(0.6, 0.4, 0.6)</volume>
+      </shadowData>
+      <damageData>
+        <rect>(0.2, 0.2, 0.6, 0.6)</rect>
+      </damageData>
+    </graphicData>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <placeWorkers>
+      <li>PlaceWorker_ShowProjectileInterceptorRadius</li>
+    </placeWorkers>
+    <comps>
+      <li Class="CompProperties_ProjectileInterceptor">
+        <radius>40</radius>
+        <interceptAirProjectiles>true</interceptAirProjectiles>
+        <interceptGroundProjectiles>false</interceptGroundProjectiles>
+        <color>(0.6, 0.6, 0.6)</color>
+        <reactivateEffect>MortarShieldGenerator_Reactivate</reactivateEffect>
+        <disarmedByEmpForTicks>10</disarmedByEmpForTicks>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

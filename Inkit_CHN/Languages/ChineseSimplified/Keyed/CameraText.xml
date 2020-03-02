@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ZoomedInPercent>最大放大系数</ZoomedInPercent>
+  <ZoomedOutPercent>最大缩小系数</ZoomedOutPercent>
+  <Exponentiality>缩放指数:</Exponentiality>
+  <SoundNearness>使拉进后的声音更加接近</SoundNearness>
+  <CameraKeys>热键(使用 1 - 9):</CameraKeys>
+  <ModifierKeys>按住以激活</ModifierKeys>
+  <SaveModifier>按住可保存视图</SaveModifier>
+  <SettingsKey>显示 Camera+ 设置</SettingsKey>
+  <HideNamesWhenZoomedOut>缩小后隐藏名字</HideNamesWhenZoomedOut>
+  <IncludeAnimals>动物使用相同的标记</IncludeAnimals>
+  <AnimalsDifferent>动物使用不同的标记</AnimalsDifferent>
+  <HideAnimals>动物不使用标记</HideAnimals>
+  <DollyPercentLabel>滚动速度</DollyPercentLabel>
+  <DollyFrictionLabel>滚动阻尼</DollyFrictionLabel>
+  <ZoomToMouse>鼠标缩放</ZoomToMouse>
+  <ZoomedIn>完全放大</ZoomedIn>
+  <ZoomedOut>完全缩小</ZoomedOut>
+  <KeyLeftShift>左 Shift</KeyLeftShift>
+  <KeyLeftAlt>左 Alt</KeyLeftAlt>
+  <KeyLeftControl>左 Ctrl</KeyLeftControl>
+  <KeyLeftCommand>左 Cmd</KeyLeftCommand>
+  <KeyLeftWindows>左 Win</KeyLeftWindows>
+  <KeyRightShift>右 Shift</KeyRightShift>
+  <KeyRightAlt>右 Alt</KeyRightAlt>
+  <KeyRightControl>右 Ctrl</KeyRightControl>
+  <KeyRightCommand>右 Cmd</KeyRightCommand>
+  <KeyRightWindows>右 Win</KeyRightWindows>
+
+  <!--<ZoomedInDollyPercent>滚动放大</ZoomedInDollyPercent>-->
+  <!--<ZoomedOutDollyPercent>滚动缩小</ZoomedOutDollyPercent>-->
+
+</LanguageData>

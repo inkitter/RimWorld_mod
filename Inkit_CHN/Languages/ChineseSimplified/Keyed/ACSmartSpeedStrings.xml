@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+  <EventSpeed>速度</EventSpeed>
+  <EventSpeedLabel>修改速度</EventSpeedLabel>
+  <Slow>慢速</Slow>
+  <Normal>一般</Normal>
+  <Fast>快速</Fast>
+  <Half>半速</Half>
+</LanguageData>

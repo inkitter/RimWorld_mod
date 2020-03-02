@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Xenophobia.degreeDatas.0.label>排外主义</Xenophobia.degreeDatas.0.label>
+  <Xenophobia.degreeDatas.0.description>[PAWN_nameDef]讨厌和不信任外星生物。[PAWN_pronoun]认为这些外星种群连畜生都不如。</Xenophobia.degreeDatas.0.description>
+  <Xenophobia.degreeDatas.1.label>亲外主义</Xenophobia.degreeDatas.1.label>
+  <Xenophobia.degreeDatas.1.description>[PAWN_nameDef]认为外星人是一种奇妙而有趣的伙伴。[PAWN_pronoun]更愿意接近、了解外星种群，也不介意与其建立关系。</Xenophobia.degreeDatas.1.description>
+
+
+</LanguageData>

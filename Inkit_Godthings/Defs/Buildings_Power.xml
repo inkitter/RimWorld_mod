@@ -209,7 +209,7 @@
     <statBases>
       <WorkToBuild>400</WorkToBuild>
       <MaxHitPoints>100</MaxHitPoints>
-      <Flammability>1.0</Flammability>
+      <Flammability>0</Flammability>
     </statBases>
     <tickerType>Rare</tickerType>
     <costList>

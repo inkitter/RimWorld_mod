@@ -13,6 +13,7 @@
       <MarketValue>1</MarketValue>
       <Mass>0.01</Mass>
       <DeteriorationRate>0</DeteriorationRate>
+      <Flammability>0</Flammability>
     </statBases>
 
     <ingestible>
@@ -69,7 +70,8 @@
   <HediffDef>
     <defName>PillHigh</defName>
     <hediffClass>HediffWithComps</hediffClass>
-    <label>PillHigh</label>
+    <label>Tough</label>
+    <description>Tough Pill</description>
     <defaultLabelColor>(0.1,0.7,0.2)</defaultLabelColor>
     <scenarioCanAdd>true</scenarioCanAdd>
     <maxSeverity>1.0</maxSeverity>
@@ -79,85 +81,68 @@
     </comps>
     <stages>
       <li>
+        <becomeVisible>false</becomeVisible>
         <hungerRateFactorOffset>-0.85</hungerRateFactorOffset>
-        <restFallFactor>0.25</restFallFactor>
+        <restFallFactor>0.20</restFallFactor>
         <socialFightChanceFactor>-1</socialFightChanceFactor>
         <capMods>
           <li>
             <capacity>Consciousness</capacity>
-            <postFactor>1.3</postFactor>
-            <offset>0.1</offset>
-            <setMax>5</setMax>
+            <offset>0.5</offset>
           </li>
           <li>
             <capacity>Moving</capacity>
-            <postFactor>1.3</postFactor>
-            <offset>0.2</offset>
+            <offset>0.4</offset>
           </li>
           <li>
             <capacity>Sight</capacity>
-            <postFactor>1.3</postFactor>
-            <offset>0.2</offset>
+            <offset>0.5</offset>
           </li>
           <li>
             <capacity>Hearing</capacity>
-            <postFactor>1.2</postFactor>
-            <offset>0.2</offset>
+            <offset>0.5</offset>
           </li>
           <li>
             <capacity>BloodFiltration</capacity>
-            <postFactor>1.3</postFactor>
-            <offset>0.2</offset>
+            <offset>0.7</offset>
           </li>
           <li>
             <capacity>BloodPumping</capacity>
-            <postFactor>1.3</postFactor>
-            <offset>0.15</offset>
+            <offset>0.7</offset>
           </li>
             <li>
             <capacity>Metabolism</capacity>
-            <postFactor>1.3</postFactor>
-            <offset>0.15</offset>
+            <offset>0.7</offset>
           </li>
           <li>
             <capacity>Breathing</capacity>
-            <postFactor>1.3</postFactor>
-            <offset>0.1</offset>
+            <offset>0.7</offset>
           </li>
           <li>
             <capacity>Manipulation</capacity>
-            <postFactor>1.3</postFactor>
-            <offset>0.15</offset>
+            <offset>0.6</offset>
           </li>
         </capMods>
         <statOffsets>
-          <PsychicSensitivity>2</PsychicSensitivity>
+          <PsychicSensitivity>0.5</PsychicSensitivity>
           <PainShockThreshold>2</PainShockThreshold>
           <ToxicSensitivity>-2</ToxicSensitivity>
           <MentalBreakThreshold>-2</MentalBreakThreshold>
           <Flammability>-2</Flammability>
 
-          <ComfyTemperatureMin>-25</ComfyTemperatureMin>
-          <ComfyTemperatureMax>25</ComfyTemperatureMax>
+          <ComfyTemperatureMin>-30</ComfyTemperatureMin>
+          <ComfyTemperatureMax>30</ComfyTemperatureMax>
 
-          <WorkSpeedGlobal>0.3</WorkSpeedGlobal>
-          <GlobalLearningFactor>0.3</GlobalLearningFactor>
+          <WorkSpeedGlobal>0.2</WorkSpeedGlobal>
 
-          <MoveSpeed>46</MoveSpeed>
-          <AimingDelayFactor>-0.3</AimingDelayFactor>
-          <ShootingAccuracyPawn>5</ShootingAccuracyPawn>
+          <MoveSpeed>36</MoveSpeed>
+          <AimingDelayFactor>-0.4</AimingDelayFactor>
+          <ShootingAccuracyPawn>3</ShootingAccuracyPawn>
           <ArmorRating_Blunt>0.6</ArmorRating_Blunt>
           <ArmorRating_Sharp>0.6</ArmorRating_Sharp>
           <ArmorRating_Heat>0.6</ArmorRating_Heat>
 
-          <MeleeDodgeChance>75</MeleeDodgeChance>
           <MeleeHitChance>100</MeleeHitChance>
-
-          <CarryingCapacity>30</CarryingCapacity>
-          
-          <PawnBeauty>2</PawnBeauty>
-          <ImmunityGainSpeed>0.50</ImmunityGainSpeed>
-          
         </statOffsets>
         <statFactors>
           <IncomingDamageFactor>0.25</IncomingDamageFactor>

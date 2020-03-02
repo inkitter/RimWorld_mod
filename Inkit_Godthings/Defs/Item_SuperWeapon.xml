@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef Name="Gun_SuperRifleBase" ParentName="BaseGunWithQuality" Abstract="True">
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/ChargeRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+    </recipeMaker>
+    <weaponTags>
+      <li>Gun</li>
+      <li>NeolithicMeleeBasic</li>
+    </weaponTags>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>0.5</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.95</AccuracyShort>
+      <AccuracyMedium>0.96</AccuracyMedium>
+      <AccuracyLong>0.98</AccuracyLong>
+      <Flammability>0</Flammability>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <costList>
+      <Steel>50</Steel>
+    </costList>
+    <generateCommonality>0.05</generateCommonality>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>1</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>1</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <ThingDef ParentName="Gun_SuperRifleBase">
+    <defName>Gun_GodRifle1</defName>
+    <label>Super Rifle Lv1</label>
+    <recipeMaker>
+			<recipeUsers Inherit="False">
+        <li>CraftingSpot</li>
+      </recipeUsers>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ChargeRifle1</defaultProjectile>
+        <warmupTime>1</warmupTime>
+        <range>45</range>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <burstShotCount>2</burstShotCount>
+        <soundCast>Shot_ChargeRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>3</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+
+  <ThingDef ParentName="Gun_SuperRifleBase">
+    <defName>Gun_GodRifle2</defName>
+    <label>Super Rifle Lv2</label>
+    <recipeMaker>
+      <recipeUsers Inherit="False">
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+      </recipeUsers>
+      <researchPrerequisite>Smithing</researchPrerequisite>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ChargeRifle2</defaultProjectile>
+        <warmupTime>1</warmupTime>
+        <range>50</range>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <burstShotCount>2</burstShotCount>
+        <soundCast>Shot_ChargeRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>3</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+
+  <ThingDef ParentName="Gun_SuperRifleBase">
+    <defName>Gun_GodRifle3</defName>
+    <label>Super Rifle Lv3</label>
+    <recipeMaker>
+      <researchPrerequisite>Gunsmithing</researchPrerequisite>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ChargeRifle3</defaultProjectile>
+        <warmupTime>1</warmupTime>
+        <range>60</range>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <burstShotCount>3</burstShotCount>
+        <soundCast>Shot_ChargeRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>3</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+
+
+  <ThingDef Name="Bullet_ChargeRifleBase" ParentName="BaseBullet" Abstract="True">
+    <label>charge shot</label>
+    <graphicData>
+      <texPath>Things/Projectile/ChargeLanceShot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>1</drawSize>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="Bullet_ChargeRifleBase">
+    <defName>Bullet_ChargeRifle1</defName>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+      <armorPenetrationBase>0.25</armorPenetrationBase>
+      <stoppingPower>1</stoppingPower>
+      <speed>80</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="Bullet_ChargeRifleBase">
+    <defName>Bullet_ChargeRifle2</defName>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>15</damageAmountBase>
+      <armorPenetrationBase>0.35</armorPenetrationBase>
+      <stoppingPower>1.5</stoppingPower>
+      <speed>100</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="Bullet_ChargeRifleBase">
+    <defName>Bullet_ChargeRifle3</defName>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>18</damageAmountBase>
+      <armorPenetrationBase>0.45</armorPenetrationBase>
+      <stoppingPower>1.7</stoppingPower>
+      <speed>120</speed>
+    </projectile>
+  </ThingDef>
+
+</Defs>

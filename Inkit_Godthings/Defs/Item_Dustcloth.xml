@@ -24,12 +24,14 @@
       <DeteriorationRate>0</DeteriorationRate>
       <Mass>0.05</Mass>
       <Beauty>7</Beauty>
-      <ArmorRating_Sharp>1.2</ArmorRating_Sharp>
-      <ArmorRating_Blunt>1.2</ArmorRating_Blunt>
-      <ArmorRating_Heat>1.2</ArmorRating_Heat>
+      <ArmorRating_Sharp>1</ArmorRating_Sharp>
+      <ArmorRating_Blunt>1</ArmorRating_Blunt>
+      <ArmorRating_Heat>1</ArmorRating_Heat>
       <Insulation_Cold>30</Insulation_Cold>
       <Insulation_Heat>30</Insulation_Heat>
       <StuffEffectMultiplierArmor>1</StuffEffectMultiplierArmor>
+      <EnergyShieldEnergyMax>2</EnergyShieldEnergyMax>
+      <EnergyShieldRechargeRate>0.2</EnergyShieldRechargeRate>
     </statBases>
     <useHitPoints>false</useHitPoints>
     <equippedStatOffsets>
@@ -62,12 +64,15 @@
       </defaultOutfitTags>
     </apparel>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
+    <thingClass>D9ASB.RangedShieldBelt</thingClass>
+    
 	</ThingDef>
 
   <ThingDef ParentName="ApparelMakeableBaseGod">
     <defName>Apparel_GodDuster</defName>
     <description>流体合金大衣.</description>
     <label>流体合金大衣</label>
+    
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Apparel/Duster/Duster</texPath>
       <graphicClass>Graphic_Single</graphicClass>
