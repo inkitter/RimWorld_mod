@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
 	<packageId>Inkit.CHN.mod</packageId>
-	<name>Inkit_09CHN</name>
+	<name>Inkit_99CHN</name>
 	<author>Inkit</author>
     <url>https://inkit.cc</url>
 	<supportedVersions>
@@ -9,6 +9,5 @@
 	</supportedVersions>
 	<description>
 		综合汉化包，排序请放在最后面。
-		防止因没有内容而报错，内置了一个MadSkill，技能不会遗忘。
 	</description>
 </ModMetaData>

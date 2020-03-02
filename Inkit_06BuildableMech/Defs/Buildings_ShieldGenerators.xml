@@ -13,6 +13,7 @@
       </blueprintGraphicData>
     </building>
     <passability>PassThroughOnly</passability>
+    <minifiedDef>MinifiedThing</minifiedDef>
     <fillPercent>0.3</fillPercent>
     <tickerType>Normal</tickerType>
     <rotatable>true</rotatable>
