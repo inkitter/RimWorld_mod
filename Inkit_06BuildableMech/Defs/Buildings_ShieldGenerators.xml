@@ -14,6 +14,9 @@
     </building>
     <passability>PassThroughOnly</passability>
     <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsMisc</li>
+    </thingCategories>
     <fillPercent>0.3</fillPercent>
     <tickerType>Normal</tickerType>
     <rotatable>true</rotatable>
@@ -28,6 +31,7 @@
       <WorkToBuild>1000</WorkToBuild>
       <Flammability>0</Flammability>
       <Beauty>20</Beauty>
+      <Mass>0.05</Mass>
     </statBases>
     <useHitPoints>false</useHitPoints>
     <generateCommonality>0</generateCommonality>

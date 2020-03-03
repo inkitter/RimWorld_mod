@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
 	<packageId>Inkit.Godthings.mod</packageId>
-	<name>Inkit_03Godthings</name>
+	<name>Inkit_10Godthings</name>
 	<author>Inkit</author>
     <url>https://inkit.cc</url>
 	<supportedVersions>
@@ -21,4 +21,10 @@
 		- 一个特性Godson。 Traits_Gods.xml
 		- 很厉害的枪。 Item_SuperWeapon.xml
 	</description>
+	<loadBefore>
+		<li>Inkit.CHN.mod</li>
+	</loadBefore>
+	<loadAfter>
+		<li>Inkit.dlls.mod</li>	
+  	</loadAfter>
 </ModMetaData>

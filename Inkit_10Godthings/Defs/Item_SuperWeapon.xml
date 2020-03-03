@@ -5,6 +5,7 @@
       <texPath>Things/Item/Equipment/WeaponRanged/ChargeRifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+    <techLevel>Neolithic</techLevel>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
       <workSkill>Crafting</workSkill>
@@ -29,11 +30,17 @@
       <AccuracyLong>0.98</AccuracyLong>
       <Flammability>0</Flammability>
       <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <MaxHitPoints>50000</MaxHitPoints>
     </statBases>
-    <useHitPoints>false</useHitPoints>
+    <useHitPoints>true</useHitPoints>
     <costList>
       <Steel>50</Steel>
     </costList>
+    <thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
     <generateCommonality>0.05</generateCommonality>
     <tools>
       <li>
@@ -57,7 +64,7 @@
   </ThingDef>
   
   <ThingDef ParentName="Gun_SuperRifleBase">
-    <defName>Gun_GodRifle1</defName>
+    <defName>Gun_GodRiflea</defName>
     <label>Super Rifle Lv1</label>
     <recipeMaker>
 			<recipeUsers Inherit="False">
@@ -68,7 +75,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_ChargeRifle1</defaultProjectile>
+        <defaultProjectile>Bullet_ChargeRiflea</defaultProjectile>
         <warmupTime>1</warmupTime>
         <range>45</range>
         <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
@@ -81,7 +88,7 @@
   </ThingDef>
 
   <ThingDef ParentName="Gun_SuperRifleBase">
-    <defName>Gun_GodRifle2</defName>
+    <defName>Gun_GodRifleb</defName>
     <label>Super Rifle Lv2</label>
     <recipeMaker>
       <recipeUsers Inherit="False">
@@ -94,7 +101,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_ChargeRifle2</defaultProjectile>
+        <defaultProjectile>Bullet_ChargeRifleb</defaultProjectile>
         <warmupTime>1</warmupTime>
         <range>50</range>
         <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
@@ -107,7 +114,7 @@
   </ThingDef>
 
   <ThingDef ParentName="Gun_SuperRifleBase">
-    <defName>Gun_GodRifle3</defName>
+    <defName>Gun_GodRiflec</defName>
     <label>Super Rifle Lv3</label>
     <recipeMaker>
       <researchPrerequisite>Gunsmithing</researchPrerequisite>
@@ -116,7 +123,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_ChargeRifle3</defaultProjectile>
+        <defaultProjectile>Bullet_ChargeRiflec</defaultProjectile>
         <warmupTime>1</warmupTime>
         <range>60</range>
         <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
@@ -140,7 +147,7 @@
   </ThingDef>
 
   <ThingDef ParentName="Bullet_ChargeRifleBase">
-    <defName>Bullet_ChargeRifle1</defName>
+    <defName>Bullet_ChargeRiflea</defName>
     <projectile>
       <damageDef>Bullet</damageDef>
       <damageAmountBase>10</damageAmountBase>
@@ -151,7 +158,7 @@
   </ThingDef>
 
   <ThingDef ParentName="Bullet_ChargeRifleBase">
-    <defName>Bullet_ChargeRifle2</defName>
+    <defName>Bullet_ChargeRifleb</defName>
     <projectile>
       <damageDef>Bullet</damageDef>
       <damageAmountBase>15</damageAmountBase>
@@ -162,7 +169,7 @@
   </ThingDef>
 
   <ThingDef ParentName="Bullet_ChargeRifleBase">
-    <defName>Bullet_ChargeRifle3</defName>
+    <defName>Bullet_ChargeRiflec</defName>
     <projectile>
       <damageDef>Bullet</damageDef>
       <damageAmountBase>18</damageAmountBase>

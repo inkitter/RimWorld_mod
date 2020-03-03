@@ -62,124 +62,62 @@
     <description>消耗某神奇物质即可发电.</description>
     <thingClass>Building</thingClass>
     <graphicData>
-      <texPath>Things/Building/Power/WoodFiredGenerator</texPath>
+      <texPath>Things/Building/Misc/TempControl/Heater</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(2,2)</drawSize>
       <shadowData>
-        <volume>(1.93,1,1.69)</volume>
-        <offset>(-0.03,0,-0.1)</offset>
+        <volume>(0.5,0.3,0.7)</volume>
+        <offset>(0,0,-0.15)</offset>
       </shadowData>
     </graphicData>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsTemperature</li>
+    </thingCategories>
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <useHitPoints>false</useHitPoints>
     <pathCost>150</pathCost>
     <blockWind>true</blockWind>
-    <fillPercent>1.0</fillPercent>
+    <fillPercent>0.6</fillPercent>
     <castEdgeShadows>false</castEdgeShadows>
     <rotatable>false</rotatable>
     <statBases>
       <MaxHitPoints>3000</MaxHitPoints>
       <WorkToBuild>2500</WorkToBuild>
       <Flammability>0</Flammability>
-      <Beauty>17</Beauty>
+      <Beauty>27</Beauty>
     </statBases>
     <tickerType>Normal</tickerType>
     <canOverlapZones>false</canOverlapZones>
-    <size>(2,2)</size>
+    <placeWorkers>
+      <li>PlaceWorker_Heater</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <size>(1,1)</size>
     <costList>
-      <Steel>77</Steel>
+      <Steel>30</Steel>
     </costList>
     <comps>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>100</heatPerSecond>
+        <heatPushMaxTemperature>20</heatPushMaxTemperature>
+      </li>
       <li Class="CompProperties_Power">
         <compClass>CompPowerPlant</compClass>
-        <basePowerConsumption>-10000</basePowerConsumption>
+        <basePowerConsumption>-1500</basePowerConsumption>
         <transmitsPower>true</transmitsPower>
-      </li>
-      <li Class="CompProperties_Refuelable">
-        <fuelConsumptionRate>0.1</fuelConsumptionRate>
-        <fuelCapacity>20</fuelCapacity>
-        <fuelFilter>
-          <thingDefs>
-            <li>WoodLog</li>
-          </thingDefs>
-        </fuelFilter>
       </li>
       <li Class="CompProperties_Glower">
         <glowRadius>8</glowRadius>
         <glowColor>(100,112,33,0)</glowColor>
       </li>
-      <li Class="CompProperties_HeatPusher">
-        <compClass>CompHeatPusherPowered</compClass>
-        <heatPerSecond>8</heatPerSecond>
-      </li>
+      
     </comps>
-    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <designationCategory>Power</designationCategory>
     <designationHotKey>Misc3</designationHotKey>
     <constructEffect>ConstructMetal</constructEffect>
-  </ThingDef>
-
-
-  <ThingDef ParentName="BuildingBase">
-    <defName>Cooler</defName>
-    <label>cooler</label>
-    <description>An air-cooling machine that fits into a wall. Cool air comes out one side, while hot exhaust comes out the other. Can be used to cool down rooms during summer, or to create a walk-in freezer.</description>
-    <thingClass>Building_Cooler</thingClass>
-    <graphicData>
-      <texPath>Things/Building/Misc/TempControl/Cooler</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
-      <damageData>
-        <cornerTL>Damage/Corner</cornerTL>
-        <cornerTR>Damage/Corner</cornerTR>
-        <cornerBL>Damage/Corner</cornerBL>
-        <cornerBR>Damage/Corner</cornerBR>
-      </damageData>
-    </graphicData>
-    <altitudeLayer>Building</altitudeLayer>
-    <useHitPoints>false</useHitPoints>
-    <passability>Impassable</passability>
-    <blockWind>true</blockWind>
-    <fillPercent>1</fillPercent>
-    <coversFloor>true</coversFloor>
-    <blockLight>true</blockLight>
-    <canOverlapZones>false</canOverlapZones>
-    <castEdgeShadows>true</castEdgeShadows>
-    <staticSunShadowHeight>1.0</staticSunShadowHeight>
-    <statBases>
-      <WorkToBuild>1600</WorkToBuild>
-      <MaxHitPoints>100</MaxHitPoints>
-      <Flammability>0</Flammability>
-    </statBases>
-    <tickerType>Rare</tickerType>
-    <costList>
-      <Steel>50</Steel>
-      <ComponentIndustrial>1</ComponentIndustrial>
-    </costList>
-    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-    <placeWorkers>
-      <li>PlaceWorker_Cooler</li>
-    </placeWorkers>
-    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
-    <building>
-      <canPlaceOverWall>true</canPlaceOverWall>
-    </building>
-    <comps>
-      <li Class="CompProperties_Power">
-        <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>200</basePowerConsumption>
-      </li>
-      <li Class="CompProperties_Flickable"/>
-      <li Class="CompProperties_TempControl">
-        <energyPerSecond>-30</energyPerSecond>
-      </li>
-    </comps>
-    <designationCategory>Temperature</designationCategory>
-    <designationHotKey>Misc5</designationHotKey>
-    <researchPrerequisites>
-      <li>AirConditioning</li>
-    </researchPrerequisites>
-    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase">
@@ -236,5 +174,63 @@
         <commandDescKey>CommandDesignateOpenCloseVentDesc</commandDescKey>
       </li>
     </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>SuperPassiveCooler</defName>
+    <label>超级蒸发器</label>
+    <description>制冷速度非常快</description>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Things/Building/Misc/PassiveCooler</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawRotated>false</drawRotated>
+      <allowFlip>false</allowFlip>
+      <shadowData>
+        <volume>(0.9,0.3,0.9)</volume>
+      </shadowData>
+      <damageData>
+        <rect>(0.2,0,0.6,0.1)</rect>
+      </damageData>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <constructEffect>ConstructDirt</constructEffect>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <fillPercent>0.40</fillPercent>
+    <statBases>
+      <MaxHitPoints>5000</MaxHitPoints>
+      <WorkToBuild>200</WorkToBuild>
+      <Flammability>0</Flammability>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <selectable>true</selectable>
+    <costList>
+      <WoodLog>10</WoodLog>
+    </costList>
+    <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+    <placeWorkers>
+      <li>PlaceWorker_CoolerSimple</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <comps>
+      <!-- <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>-11</heatPerSecond>
+        <heatPushMinTemperature>17</heatPushMinTemperature>
+      </li> -->
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>-50</heatPerSecond>
+        <heatPushMinTemperature>-20</heatPushMinTemperature>
+      </li>
+    </comps>
+    <designationCategory>Temperature</designationCategory>
+    <designationHotKey>Misc4</designationHotKey>
   </ThingDef>
 </Defs>

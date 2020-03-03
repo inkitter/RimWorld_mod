@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<DesignatorDropdownGroupDef>
+    	<defName>Floor_Carpet_Super</defName>
+  	</DesignatorDropdownGroupDef>
+	<DesignatorDropdownGroupDef>
+    	<defName>Floor_Floor_Super</defName>
+  	</DesignatorDropdownGroupDef>
+
+	<TerrainDef Name="CarpetBaseSuper" ParentName="FloorBase" Abstract="True">
+		<texturePath>Terrain/Surfaces/Carpet</texturePath>
+		<designatorDropdown>Floor_Carpet_Super</designatorDropdown>
+		
+		<description>用物质提取出神奇的液体，再经压缩制成的地毯，有养分。</description>
+		<renderPrecedence>199</renderPrecedence>
+		<statBases>
+			<Beauty>10</Beauty>
+			<WorkToBuild>400</WorkToBuild>
+			<Cleanliness>2</Cleanliness>
+			<Flammability>0</Flammability>
+		</statBases>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<constructEffect>ConstructMetal</constructEffect>
+		<pathCost>-3</pathCost>
+		<fertility>5</fertility>
+		<layerable>true</layerable>
+		<costList>
+			<WoodLog>1</WoodLog>
+		</costList>
+		<tags>
+			<li>FineFloor</li>
+		</tags>
+  	</TerrainDef>
+
+	<TerrainDef ParentName="CarpetBaseSuper">
+		<defName>Tile_SMCar</defName>
+		<label>白色质地毯</label>
+		<color>(195,192,176)</color>
+	</TerrainDef>
+
+	<TerrainDef ParentName="CarpetBaseSuper">
+		<defName>Tile_SMCarSilver</defName>
+		<label>银色植质地毯</label>
+		<color>(0.45, 0.45, 0.45)</color>
+	</TerrainDef>
+
+	<TerrainDef ParentName="CarpetBaseSuper">
+		<defName>Tile_SMCarGold</defName>
+		<label>金色植质地毯</label>
+		<color>(0.65, 0.65, 0.35)</color>
+	</TerrainDef>
+
+	<TerrainDef ParentName="CarpetBaseSuper">
+		<defName>Tile_SMCarRed</defName>
+		<label>红色植质地毯</label>
+		<color>(118,49,57)</color>
+	</TerrainDef>
+
+	<TerrainDef ParentName="CarpetBaseSuper">
+		<defName>Tile_SMCarGreen</defName>
+		<label>绿色植质地毯</label>
+		<color>(89,105,62)</color>
+	</TerrainDef>
+
+	<TerrainDef ParentName="CarpetBaseSuper">
+		<defName>Tile_SMCarBlue</defName>
+		<label>蓝色植质地毯</label>
+		<color>(24,65,121)</color>
+	</TerrainDef>
+
+
+	<TerrainDef Name="FloorBaseSuper" ParentName="FloorBase" Abstract="True">
+		<texturePath>Terrain/Surfaces/Carpet</texturePath>
+		<designatorDropdown>Floor_Floor_Super</designatorDropdown>
+		<statBases>
+			<Beauty>7</Beauty>
+			<WorkToBuild>1000</WorkToBuild>
+			<Cleanliness>1</Cleanliness>
+			<Flammability>0</Flammability>
+		</statBases>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<constructEffect>ConstructMetal</constructEffect>
+		<renderPrecedence>200</renderPrecedence>
+		<fertility>0</fertility>
+		<description>用物质提取出神奇的液体，再经高能冲压制成的地板。</description>
+		<layerable>true</layerable>
+		<tags>
+			<li>FineFloor</li>
+		</tags>
+		<pathCost>1</pathCost>
+		<costList>
+			<Steel>1</Steel>
+		</costList>
+  	</TerrainDef>
+
+
+	<TerrainDef ParentName="FloorBaseSuper">
+		<defName>Tile_SMFloor</defName>
+		<label>灰色合金地板</label>
+		<color>(77,77,77)</color>
+	</TerrainDef>
+
+	<TerrainDef ParentName="FloorBaseSuper">
+		<defName>Tile_SMFloorDark</defName>
+		<label>黑色合金地板</label>
+		<color>(81,81,81)</color>
+	</TerrainDef>
+
+	<TerrainDef ParentName="FloorBaseSuper">
+		<defName>Tile_SMFloorBrown</defName>
+		<label>棕色合金地板</label>
+		<color>(8126,104,94)</color>
+	</TerrainDef>
+</Defs>

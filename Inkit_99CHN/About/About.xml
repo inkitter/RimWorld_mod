@@ -5,9 +5,13 @@
 	<author>Inkit</author>
     <url>https://inkit.cc</url>
 	<supportedVersions>
+		<li>1.0</li>
 		<li>1.1</li>
 	</supportedVersions>
 	<description>
 		综合汉化包，排序请放在最后面。
 	</description>
+	<loadAfter>
+		<li>Inkit.Godthings.mod</li>	
+  	</loadAfter>
 </ModMetaData>

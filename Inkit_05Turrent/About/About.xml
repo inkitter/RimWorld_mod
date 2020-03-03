@@ -12,4 +12,10 @@
 		正义MOD。
 		- 超级防御塔
 	</description>
+	<loadBefore>
+		<li>Inkit.Godthings.mod</li>
+	</loadBefore>
+	<loadAfter>
+		<li>Inkit.dlls.mod</li>	
+  	</loadAfter>
 </ModMetaData>

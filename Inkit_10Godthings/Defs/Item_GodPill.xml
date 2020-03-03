@@ -15,7 +15,12 @@
       <DeteriorationRate>0</DeteriorationRate>
       <Flammability>0</Flammability>
     </statBases>
-
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>1</costStuffCount>
     <ingestible>
       <foodType>Plant, Processed</foodType>
       <joyKind>Chemical</joyKind>

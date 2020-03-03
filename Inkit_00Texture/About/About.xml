@@ -5,9 +5,23 @@
 	<author>Inkit</author>
     <url>https://inkit.cc</url>
 	<supportedVersions>
+		<li>1.0</li>
 		<li>1.1</li>
 	</supportedVersions>
+
+	
 	<description>
 		贴图补充包，防止缺贴图
 	</description>
+
+	<loadBefore>
+		<li>Inkit.dlls.mod</li>
+	</loadBefore>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>brrainz.harmony</li>
+		<li>UnlimitedHugs.HugsLib</li>
+		<li>Oblitus.AnimalsLogic</li>
+  	</loadAfter>
 </ModMetaData>

@@ -14,12 +14,12 @@
     <generateCommonality>0</generateCommonality>
     <tradeability>Sellable</tradeability>
     <thingCategories>
-      <li>ApparelArmor</li>
+      <li>Apparel</li>
     </thingCategories>
     <statBases>
       <MarketValue>150</MarketValue>
       <Flammability>0</Flammability>
-			<MaxHitPoints>1000</MaxHitPoints>
+			<MaxHitPoints>50000</MaxHitPoints>
 			<WorkToMake>10000</WorkToMake>
       <DeteriorationRate>0</DeteriorationRate>
       <Mass>0.05</Mass>
@@ -33,7 +33,7 @@
       <EnergyShieldEnergyMax>2</EnergyShieldEnergyMax>
       <EnergyShieldRechargeRate>0.2</EnergyShieldRechargeRate>
     </statBases>
-    <useHitPoints>false</useHitPoints>
+    <useHitPoints>true</useHitPoints>
     <equippedStatOffsets>
 			<SocialImpact>0.2</SocialImpact>
 		</equippedStatOffsets>
@@ -70,19 +70,18 @@
 
   <ThingDef ParentName="ApparelMakeableBaseGod">
     <defName>Apparel_GodDuster</defName>
-    <description>流体合金大衣.</description>
-    <label>流体合金大衣</label>
+    <description>流体合金衬衣.</description>
+    <label>流体合金衬衣</label>
     
     <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/Duster/Duster</texPath>
+      <texPath>Things/Pawn/Humanlike/Apparel/ShirtButton/ShirtButton</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>1.00</drawSize>
     </graphicData>
     <apparel>
       <layers>
-        <li>Shell</li>
+        <li>OnSkin</li>
       </layers>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Duster/Duster</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ShirtButton/ShirtButton</wornGraphicPath>
       <tags>
         <li>RoyalCombatGear</li>
       </tags>

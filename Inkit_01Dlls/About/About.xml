@@ -18,4 +18,20 @@
 		- 堆叠mod
 		- 远程可用的护盾
 	</description>
+	<modDependenciesByVersion>
+		<v1.1>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+		</li>
+		</v1.1>
+ 	</modDependenciesByVersion>
+	<loadBefore>
+		<li>Inkit.Godthings.mod</li>
+	</loadBefore>
+	<loadAfter>
+		<li>Inkit.Texture.mod</li>	
+  	</loadAfter>
 </ModMetaData>
