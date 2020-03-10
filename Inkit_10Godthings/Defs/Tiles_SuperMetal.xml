@@ -34,7 +34,7 @@
 
 	<TerrainDef ParentName="CarpetBaseSuper">
 		<defName>Tile_SMCar</defName>
-		<label>白色质地毯</label>
+		<label>白色植质地毯</label>
 		<color>(195,192,176)</color>
 	</TerrainDef>
 

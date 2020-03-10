@@ -41,7 +41,7 @@
       <li>RewardStandardLowFreq</li>
       <li>RewardStandardQualitySuper</li>
     </thingSetMakerTags>
-    <generateCommonality>0.05</generateCommonality>
+    <generateCommonality>0</generateCommonality>
     <tools>
       <li>
         <label>stock</label>

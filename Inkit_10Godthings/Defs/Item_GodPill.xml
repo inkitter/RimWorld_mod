@@ -109,15 +109,15 @@
           </li>
           <li>
             <capacity>BloodFiltration</capacity>
-            <offset>0.7</offset>
+            <offset>1</offset>
           </li>
           <li>
             <capacity>BloodPumping</capacity>
-            <offset>0.7</offset>
+            <offset>0.8</offset>
           </li>
             <li>
             <capacity>Metabolism</capacity>
-            <offset>0.7</offset>
+            <offset>1</offset>
           </li>
           <li>
             <capacity>Breathing</capacity>
@@ -125,11 +125,11 @@
           </li>
           <li>
             <capacity>Manipulation</capacity>
-            <offset>0.6</offset>
+            <offset>0.7</offset>
           </li>
         </capMods>
         <statOffsets>
-          <PsychicSensitivity>0.5</PsychicSensitivity>
+          <PsychicSensitivity>-0.8</PsychicSensitivity>
           <PainShockThreshold>2</PainShockThreshold>
           <ToxicSensitivity>-2</ToxicSensitivity>
           <MentalBreakThreshold>-2</MentalBreakThreshold>
@@ -148,12 +148,14 @@
           <ArmorRating_Heat>0.6</ArmorRating_Heat>
 
           <MeleeHitChance>100</MeleeHitChance>
+          <PawnBeauty>6</PawnBeauty>
+          <MedicalTendQuality>0.5</MedicalTendQuality>
         </statOffsets>
         <statFactors>
           <IncomingDamageFactor>0.25</IncomingDamageFactor>
-          <PsychicEntropyRecoveryRate>2</PsychicEntropyRecoveryRate>
+          <PsychicEntropyRecoveryRate>3</PsychicEntropyRecoveryRate>
           <PsychicEntropyGain>2</PsychicEntropyGain>
-          <PsychicEntropyMax>2</PsychicEntropyMax>
+          <PsychicEntropyMax>20</PsychicEntropyMax>
         </statFactors>
         <makeImmuneTo>
           <li>Malaria</li>
