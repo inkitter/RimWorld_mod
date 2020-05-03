@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="BodyPartRoyalBase">
+    <defName>PsychicAmplifier</defName>
+    <label>psychic amplifier</label>
+    <description>PsychicAmplifier</description>
+    <thingSetMakerTags>
+      <li>RewardStandardHighFreq</li>
+      <li>RewardNonEmpireFactionsOnly</li>
+    </thingSetMakerTags>
+    <statBases>
+      <MarketValue>1200</MarketValue>
+      <WorkToMake>300</WorkToMake>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Item/Special/PsychicAmplifier</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(1,1,1)</color>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_RoyalImplant">
+        <implantHediff>PsychicAmplifier</implantHediff>
+      </li>
+      <li Class="CompProperties_Usable">
+        <compClass>CompUsableImplant</compClass>
+        <useJob>UseItem</useJob>
+        <useLabel>Install psychic amplifier</useLabel>
+      </li>
+      <li Class="CompProperties_UseEffectInstallImplant">
+        <hediffDef>PsychicAmplifier</hediffDef>
+        <bodyPart>Brain</bodyPart>
+        <canUpgrade>true</canUpgrade>
+      </li>
+    </comps>
+
+    <recipeMaker>
+			<recipeUsers>
+        <li>CraftingSpot</li>
+        <li>DrugLab</li>
+        <li>ElectricStove</li>
+        <li>FueledStove</li>
+      </recipeUsers>
+      <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+      <workSkill>Cooking</workSkill>
+    </recipeMaker>
+  </ThingDef>
+</Defs>
